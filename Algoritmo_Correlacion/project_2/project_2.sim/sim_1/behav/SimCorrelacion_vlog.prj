@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/new/Deco_Sum.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/new/Signal_Register.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/new/Sumatoria.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/new/RegistroCorrelacion.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/new/Pattern_Counter.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/new/Multiplicador.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/new/Maquina_Estados.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/new/FlagCounter.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/new/FF_JK.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/imports/new/DecosSuma.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/new/BitsCounter.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sources_1/new/Correlacion.v"
+verilog xil_defaultlib  "../../../project_2.srcs/sim_1/new/SimCorrelacion.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

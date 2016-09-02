@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="SimCorrelacion_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="SimCorrelacion" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="15672916665fs"></ZoomStartTime>
+      <ZoomEndTime time="15921416667fs"></ZoomEndTime>
+      <Cursor1Time time="15880000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="21" />
+   <wvobject db_ref_id="1" type="logic" fp_name="/SimCorrelacion/Bitstream">
+      <obj_property name="ElementShortName">Bitstream</obj_property>
+      <obj_property name="ObjectShortName">Bitstream</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/SimCorrelacion/Clk">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/SimCorrelacion/Reset">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/SimCorrelacion/Read">
+      <obj_property name="ElementShortName">Read</obj_property>
+      <obj_property name="ObjectShortName">Read</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/SimCorrelacion/Flag">
+      <obj_property name="ElementShortName">Flag</obj_property>
+      <obj_property name="ObjectShortName">Flag</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/SimCorrelacion/uut/Control/FCE">
+      <obj_property name="ElementShortName">FCE</obj_property>
+      <obj_property name="ObjectShortName">FCE</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/SimCorrelacion/uut/RPatron/Data_Out">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">Data_Out[1023:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_Out[1023:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">Patron</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/SimCorrelacion/uut/RMuestra/Data_Out">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">Data_Out[1023:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_Out[1023:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">Muestra</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/SimCorrelacion/uut/Sum/Input">
+      <obj_property name="ElementShortName">Input[511:0]</obj_property>
+      <obj_property name="ObjectShortName">Input[511:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/SimCorrelacion/uut/Control/PRE">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">PRE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">PRE[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">Estado</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/SimCorrelacion/uut/ContadorPatron/Cuenta">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">Cuenta[10:0]</obj_property>
+      <obj_property name="ObjectShortName">Cuenta[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">ContadorPatron</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/SimCorrelacion/uut/CBits/Cuenta">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">Cuenta[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Cuenta[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">ContadorBits</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/SimCorrelacion/uut/ContadorBandera/Cuenta">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">Cuenta[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Cuenta[3:0]</obj_property>
+      <obj_property name="label">ContadorBandera</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/SimCorrelacion/uut/ContadorPatron/S1">
+      <obj_property name="ElementShortName">S1</obj_property>
+      <obj_property name="ObjectShortName">S1</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/SimCorrelacion/uut/ContadorBandera/S1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">S1</obj_property>
+      <obj_property name="ObjectShortName">S1</obj_property>
+      <obj_property name="label">S2</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/SimCorrelacion/uut/ContadorBandera/S2">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">S2</obj_property>
+      <obj_property name="ObjectShortName">S2</obj_property>
+      <obj_property name="label">S3</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/SimCorrelacion/uut/ContadorBandera/S3">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">S3</obj_property>
+      <obj_property name="ObjectShortName">S3</obj_property>
+      <obj_property name="label">S4</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/SimCorrelacion/uut/CBits/S">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">S</obj_property>
+      <obj_property name="ObjectShortName">S</obj_property>
+      <obj_property name="label">S5</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/SimCorrelacion/uut/ContadorBandera/EN">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">EN</obj_property>
+      <obj_property name="ObjectShortName">EN</obj_property>
+      <obj_property name="label">EN ContadorBandera</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/SimCorrelacion/uut/Sum/Output">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">Output[10:0]</obj_property>
+      <obj_property name="ObjectShortName">Output[10:0]</obj_property>
+      <obj_property name="label">Precorrelacion</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/SimCorrelacion/Data_Out">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">Data_Out[10:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_Out[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">Correlacion</obj_property>
+   </wvobject>
+</wave_config>

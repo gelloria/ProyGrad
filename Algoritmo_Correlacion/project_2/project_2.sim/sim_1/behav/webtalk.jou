@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Fri Aug 26 17:54:50 2016
+# Process ID: 21328
+# Current directory: /home/gabriel/project_2/project_2.sim/sim_1/behav
+# Command line: wbtcv -mode batch -source /home/gabriel/project_2/project_2.sim/sim_1/behav/xsim.dir/SimCorrelacion_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/gabriel/project_2/project_2.sim/sim_1/behav/webtalk.log
+# Journal file: /home/gabriel/project_2/project_2.sim/sim_1/behav/webtalk.jou
+#-----------------------------------------------------------
+source /home/gabriel/project_2/project_2.sim/sim_1/behav/xsim.dir/SimCorrelacion_behav/webtalk/xsim_webtalk.tcl -notrace
