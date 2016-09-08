@@ -1,0 +1,555 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Sep 07 21:40:00 2016
+# Process ID: 38152
+# Current directory: C:/Users/gmarin/Documents/PG/Detector/Detector.runs/synth_1
+# Command line: vivado.exe -log SimCorrelacion.vds -mode batch -messageDb vivado.pb -notrace -source SimCorrelacion.tcl
+# Log file: C:/Users/gmarin/Documents/PG/Detector/Detector.runs/synth_1/SimCorrelacion.vds
+# Journal file: C:/Users/gmarin/Documents/PG/Detector/Detector.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source SimCorrelacion.tcl -notrace
+Command: synth_design -top SimCorrelacion -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 36100 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 304.113 ; gain = 98.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SimCorrelacion' [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:23]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:37]
+INFO: [Common 17-14] Message 'Synth 8-311' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-290] fork/join block will be implemented as sequential block [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:73]
+INFO: [Synth 8-638] synthesizing module 'Correlacion' [C:/Users/gmarin/Documents/PG/Verilog/Correlacion.v:23]
+	Parameter OSF bound to: 8 - type: integer 
+	Parameter NM bound to: 128 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Signal_Register' [C:/Users/gmarin/Documents/PG/Verilog/Signal_Register.v:22]
+	Parameter SAMPLES bound to: 128 - type: integer 
+	Parameter OSF bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Signal_Register' (1#1) [C:/Users/gmarin/Documents/PG/Verilog/Signal_Register.v:22]
+INFO: [Synth 8-638] synthesizing module 'BitsCounter' [C:/Users/gmarin/Documents/PG/Verilog/BitsCounter.v:23]
+	Parameter OSF bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'BitsCounter' (2#1) [C:/Users/gmarin/Documents/PG/Verilog/BitsCounter.v:23]
+INFO: [Synth 8-638] synthesizing module 'Pattern_Counter' [C:/Users/gmarin/Documents/PG/Verilog/Pattern_Counter.v:23]
+	Parameter SAMPLES bound to: 128 - type: integer 
+	Parameter OSF bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Pattern_Counter' (3#1) [C:/Users/gmarin/Documents/PG/Verilog/Pattern_Counter.v:23]
+INFO: [Synth 8-638] synthesizing module 'Multiplicador' [C:/Users/gmarin/Documents/PG/Verilog/Multiplicador.v:23]
+	Parameter SAMPLES bound to: 128 - type: integer 
+	Parameter OSF bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplicador' (4#1) [C:/Users/gmarin/Documents/PG/Verilog/Multiplicador.v:23]
+INFO: [Synth 8-638] synthesizing module 'DecosSuma' [C:/Users/gmarin/Documents/PG/Verilog/DecosSuma.v:23]
+	Parameter SAMPLES bound to: 128 - type: integer 
+	Parameter OSF bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DecosSuma' (5#1) [C:/Users/gmarin/Documents/PG/Verilog/DecosSuma.v:23]
+INFO: [Synth 8-638] synthesizing module 'RegistroCorrelacion' [C:/Users/gmarin/Documents/PG/Verilog/RegistroCorrelacion.v:23]
+	Parameter SAMPLES bound to: 128 - type: integer 
+	Parameter OSF bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegistroCorrelacion' (6#1) [C:/Users/gmarin/Documents/PG/Verilog/RegistroCorrelacion.v:23]
+INFO: [Synth 8-638] synthesizing module 'Maquina_Estados' [C:/Users/gmarin/Documents/PG/Verilog/Maquina_Estados.v:23]
+	Parameter T0 bound to: 3'b000 
+	Parameter T1 bound to: 3'b001 
+	Parameter T2 bound to: 3'b010 
+	Parameter T3 bound to: 3'b011 
+	Parameter T4 bound to: 3'b100 
+	Parameter T5 bound to: 3'b101 
+	Parameter T6 bound to: 3'b110 
+	Parameter T7 bound to: 3'b111 
+INFO: [Synth 8-256] done synthesizing module 'Maquina_Estados' (7#1) [C:/Users/gmarin/Documents/PG/Verilog/Maquina_Estados.v:23]
+INFO: [Synth 8-638] synthesizing module 'FlagCounter' [C:/Users/gmarin/Documents/PG/Verilog/FlagCounter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'FlagCounter' (8#1) [C:/Users/gmarin/Documents/PG/Verilog/FlagCounter.v:23]
+INFO: [Synth 8-638] synthesizing module 'FF_JK' [C:/Users/gmarin/Documents/PG/Verilog/FF_JK.v:23]
+INFO: [Synth 8-256] done synthesizing module 'FF_JK' (9#1) [C:/Users/gmarin/Documents/PG/Verilog/FF_JK.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Correlacion' (10#1) [C:/Users/gmarin/Documents/PG/Verilog/Correlacion.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SimCorrelacion' (11#1) [C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 393.723 ; gain = 187.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 393.723 ; gain = 187.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 393.723 ; gain = 187.680
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-802] inferred FSM for state register 'PRE_reg' in module 'Maquina_Estados'
+INFO: [Synth 8-5544] ROM "EFC" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Shift_SR" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Shift_PR" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FUT" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FUT" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FUT" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FUT" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FUT" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      T0 |                              000 |                              000
+                      T1 |                              001 |                              001
+                      T2 |                              010 |                              010
+                      T3 |                              011 |                              011
+                      T4 |                              100 |                              100
+                      T5 |                              101 |                              101
+                      T6 |                              110 |                              110
+                      T7 |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'PRE_reg' using encoding 'sequential' in module 'Maquina_Estados'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 419.395 ; gain = 213.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	1024 Input     11 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   2 Input   1024 Bit         XORs := 1     
++---Registers : 
+	             1024 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  14 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Signal_Register 
+Detailed RTL Component Info : 
++---Registers : 
+	             1024 Bit    Registers := 1     
+Module BitsCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+Module Pattern_Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+Module Multiplicador 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input   1024 Bit         XORs := 1     
+Module DecosSuma 
+Detailed RTL Component Info : 
++---Adders : 
+	1024 Input     11 Bit       Adders := 1     
+Module RegistroCorrelacion 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
+Module Maquina_Estados 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 2     
+Module FlagCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+Module FF_JK 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 475.699 ; gain = 269.656
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 476.867 ; gain = 270.824
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 476.867 ; gain = 270.824
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1023]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1022]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1021]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1020]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1019]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1018]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1017]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1016]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1015]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1014]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1013]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1012]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1011]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1010]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1009]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1008]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1007]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1006]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1005]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1004]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1003]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1002]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1001]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[1000]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[999]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[998]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[997]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[996]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[995]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[994]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[993]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[992]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[991]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[990]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[989]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[988]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[987]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[986]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[985]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[984]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[983]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[982]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[981]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[980]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[979]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[978]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[977]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[976]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[975]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[974]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[973]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[972]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[971]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[970]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[969]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[968]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[967]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[966]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[965]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[964]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[963]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[962]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[961]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[960]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[959]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[958]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[957]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[956]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[955]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[954]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[953]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[952]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[951]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[950]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[949]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[948]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[947]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[946]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[945]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[944]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[943]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[942]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[941]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[940]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[939]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[938]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[937]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[936]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[935]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[934]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[933]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[932]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[931]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[930]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[929]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[928]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[927]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[926]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[925]) is unused and will be removed from module SimCorrelacion.
+WARNING: [Synth 8-3332] Sequential element (uut/Signal_Regs.RPatron/Data_Out_reg[924]) is unused and will be removed from module SimCorrelacion.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 496.145 ; gain = 290.102
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 496.145 ; gain = 290.102
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 496.145 ; gain = 290.102
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 496.145 ; gain = 290.102
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 496.145 ; gain = 290.102
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 496.145 ; gain = 290.102
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 496.145 ; gain = 290.102
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 496.145 ; gain = 290.102
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-115] binding instance 'i_0' in module 'SimCorrelacion' to reference 'Correlacion' which has no pins
+WARNING: [Synth 8-115] binding instance 'i_0' in module 'Correlacion' to reference 'Maquina_Estados' which has no pins
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 496.145 ; gain = 290.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 496.145 ; gain = 290.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 496.145 ; gain = 290.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 496.145 ; gain = 290.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     2|
+|2     |FDRE |     3|
++------+-----+------+
+
+Report Instance Areas: 
++------+------------+----------------+------+
+|      |Instance    |Module          |Cells |
++------+------------+----------------+------+
+|1     |top         |                |     5|
+|2     |  uut       |Correlacion     |     5|
+|3     |    Control |Maquina_Estados |     5|
++------+------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 496.145 ; gain = 290.102
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 67609 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 496.145 ; gain = 270.105
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 496.145 ; gain = 290.102
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 203 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:30 . Memory (MB): peak = 556.602 ; gain = 333.117
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 556.602 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 07 21:40:37 2016...

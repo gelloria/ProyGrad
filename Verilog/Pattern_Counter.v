@@ -20,7 +20,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Pattern_Counter # (parameter SAMPLES=128, parameter OSF=8)(Clk,Reset,EN,S1);
+module Pattern_Counter 
+# (parameter SAMPLES=128, parameter OSF=8)
+
+(Clk,Reset,EN,S1);
     
     input Clk;
     input Reset;
@@ -32,6 +35,7 @@ module Pattern_Counter # (parameter SAMPLES=128, parameter OSF=8)(Clk,Reset,EN,S
     reg [$clog2(SAMPLES*OSF):0] Cuenta;
         
     always @(posedge Clk)
+    begin
         
     if (Reset)
         Cuenta=0;
@@ -39,7 +43,9 @@ module Pattern_Counter # (parameter SAMPLES=128, parameter OSF=8)(Clk,Reset,EN,S
         Cuenta=Cuenta+1;
     else
         Cuenta=Cuenta;
-        
-    assign S1=(Cuenta==(SAMPLES*OSF));  
+    
+    end     
+   assign S1=(Cuenta==(SAMPLES*OSF));  
+  
 
 endmodule

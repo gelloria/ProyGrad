@@ -21,15 +21,25 @@
 
 
 module DecosSuma # (parameter SAMPLES=128, parameter OSF=8) (Input,Output);
-    input [SAMPLES*OSF-1:0] Input;
-    output [$clog2(SAMPLES*OSF)+1:0] Output;
+    input wire [SAMPLES*OSF-1:0] Input;
+    output wire [$clog2(SAMPLES*OSF):0] Output;
 
-    reg [$clog2(SAMPLES*OSF)+1:0]var;
+    reg [$clog2(SAMPLES*OSF):0] var;
+    integer i;
 
-    for(i=0; i<SAMPLES*OSF; i=i+1)begin
-        var=var+Input[i];
-    end
-    Output=var;
+    always @(Input)
+    begin
+        var=0;
+        for(i=0; i<SAMPLES*OSF; i=i+1)
+        begin
+            var=var+Input[i];
+        end
+     
+     end
+
+    assign Output=var;
+
+   
 
 
     /*

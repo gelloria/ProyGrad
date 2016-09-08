@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gmarin/Documents/PG/Verilog/Pattern_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pattern_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gmarin/Documents/PG/Pruebas_PG/Pruebas_PG.srcs/sim_1/new/SIM_Pattern_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIM_Pattern_Counter
+WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [C:/Users/gmarin/Documents/PG/Pruebas_PG/Pruebas_PG.srcs/sim_1/new/SIM_Pattern_Counter.v:55]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gmarin/Documents/PG/Pruebas_PG/Pruebas_PG.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

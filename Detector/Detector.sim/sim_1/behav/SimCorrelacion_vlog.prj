@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../../Verilog/Multiplicador.v"
+verilog xil_defaultlib  "../../../../Verilog/FlagCounter.v"
+verilog xil_defaultlib  "../../../../Verilog/DecosSuma.v"
+verilog xil_defaultlib  "../../../../Verilog/BitsCounter.v"
+verilog xil_defaultlib  "../../../../Verilog/Pattern_Counter.v"
+verilog xil_defaultlib  "../../../../Verilog/FF_JK.v"
+verilog xil_defaultlib  "../../../../Verilog/Maquina_Estados.v"
+verilog xil_defaultlib  "../../../../Verilog/RegistroCorrelacion.v"
+verilog xil_defaultlib  "../../../../Verilog/Signal_Register.v"
+verilog xil_defaultlib  "../../../../Verilog/Correlacion.v"
+verilog xil_defaultlib  "../../../../Verilog/SimCorrelacion.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

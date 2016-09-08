@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gmarin/Documents/PG/Verilog/Multiplicador.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplicador
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gmarin/Documents/PG/Verilog/FlagCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FlagCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gmarin/Documents/PG/Verilog/DecosSuma.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DecosSuma
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gmarin/Documents/PG/Verilog/BitsCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BitsCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gmarin/Documents/PG/Verilog/Pattern_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pattern_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gmarin/Documents/PG/Verilog/FF_JK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FF_JK
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gmarin/Documents/PG/Verilog/Maquina_Estados.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Maquina_Estados
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gmarin/Documents/PG/Verilog/RegistroCorrelacion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegistroCorrelacion
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gmarin/Documents/PG/Verilog/Signal_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Signal_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gmarin/Documents/PG/Verilog/Correlacion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Correlacion
+INFO: [VRFC 10-2458] undeclared symbol FCE, assumed default net type wire [C:/Users/gmarin/Documents/PG/Verilog/Correlacion.v:60]
+INFO: [VRFC 10-2458] undeclared symbol ESR, assumed default net type wire [C:/Users/gmarin/Documents/PG/Verilog/Correlacion.v:64]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gmarin/Documents/PG/Verilog/SimCorrelacion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimCorrelacion
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gmarin/Documents/PG/Detector/Detector.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

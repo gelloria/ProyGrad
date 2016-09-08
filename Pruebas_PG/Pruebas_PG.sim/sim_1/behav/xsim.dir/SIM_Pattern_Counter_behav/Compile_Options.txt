@@ -1,0 +1,1 @@
+-wto "9bffa857b3a0456395fbe434466eb1e3" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "SIM_Pattern_Counter_behav" "xil_defaultlib.SIM_Pattern_Counter" "xil_defaultlib.glbl" -log "elaborate.log" 
