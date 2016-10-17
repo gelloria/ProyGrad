@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:/home/gabriel/PG/fpuuart/Nexys4_Master.xdc rfile:../../../../fpuuart/Nexys4_Master.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN E3 [get_ports clk]
+set_property src_info {type:XDC file:1 line:194 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN E16 [get_ports rst]
+set_property src_info {type:XDC file:1 line:490 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN D4 [get_ports TX]

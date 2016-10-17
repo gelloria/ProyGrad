@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../../Verilog/SR_latch_dataflow.v"
+verilog xil_defaultlib  "../../../../Verilog/SR_latch_gate.v"
+verilog xil_defaultlib  "../../../../Verilog/delayed_and.v"
+verilog xil_defaultlib  "../../../../MovingAverage/MovingAverage.srcs/sources_1/new/mux2_1.v"
+verilog xil_defaultlib  "../../../../Verilog/Sort.v"
+verilog xil_defaultlib  "../../../../Verilog/Sumatoria.v"
+verilog xil_defaultlib  "../../../../Verilog/thermo2bin.v"
+verilog xil_defaultlib  "../../../../Verilog/tb_Sort.v"
+verilog xil_defaultlib  "../../../../MovingAverage/MovingAverage.srcs/sources_1/new/tb_mux2_1.v"
+verilog xil_defaultlib  "../../../../Verilog/tb_delayed_and.v"
+verilog xil_defaultlib  "../../../../Verilog/tb_SR_latch_gate.v"
+verilog xil_defaultlib  "../../../../Verilog/tb_SR_latch_dataflow.v"
+verilog xil_defaultlib  "../../../../Verilog/tb_thermo2bin.v"
+verilog xil_defaultlib  "../../../../Verilog/tb_Sumatoria.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

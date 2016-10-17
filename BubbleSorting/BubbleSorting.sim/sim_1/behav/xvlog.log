@@ -1,0 +1,32 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/Verilog/SR_latch_dataflow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SR_latch_dataflow
+INFO: [VRFC 10-2458] undeclared symbol Q_i, assumed default net type wire [/home/gabriel/PG/Verilog/SR_latch_dataflow.v:26]
+INFO: [VRFC 10-2458] undeclared symbol Qbar_i, assumed default net type wire [/home/gabriel/PG/Verilog/SR_latch_dataflow.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/Verilog/SR_latch_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SR_latch_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/Verilog/delayed_and.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delayed_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/MovingAverage/MovingAverage.srcs/sources_1/new/mux2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/Verilog/Sort.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sort
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/Verilog/Sumatoria.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sumatoria
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/Verilog/thermo2bin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module thermo2bin
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/Verilog/tb_Sort.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Sort
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/MovingAverage/MovingAverage.srcs/sources_1/new/tb_mux2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_mux2_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/Verilog/tb_delayed_and.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_delayed_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/Verilog/tb_SR_latch_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SR_latch_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/Verilog/tb_SR_latch_dataflow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_SR_latch_dataflow
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/Verilog/tb_thermo2bin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_thermo2bin
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/Verilog/tb_Sumatoria.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Sumatoria
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/BubbleSorting/BubbleSorting.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

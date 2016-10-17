@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 04/01/2016 08:21:41 PM
+// Create Date: 
 // Design Name: 
-// Module Name: Multiplicador
+// Module Name: 
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -26,6 +26,4 @@ module Multiplicador # (parameter SAMPLES=128, parameter OSF=8) (A,B,C);
     output [SAMPLES*OSF-1:0] C;
     
     assign C= ~(A^B);
-    //assign C = A|B;
-    //assign C=A-^B;
 endmodule

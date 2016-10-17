@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/Verilog/shiftRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/Verilog/tb_shiftRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_shiftRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/AlgoritmoCorrelacion/AlgoritmoCorrelacion.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,2042 @@
+
+*** Running vivado
+    with args -log FPU_UART.vds -m64 -mode batch -messageDb vivado.pb -notrace -source FPU_UART.tcl
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source FPU_UART.tcl -notrace
+Command: synth_design -top FPU_UART -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1034.812 ; gain = 187.723 ; free physical = 839 ; free virtual = 8425
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FPU_UART' [/home/gabriel/PG/fpuuart/FPU_UART.v:23]
+	Parameter W bound to: 32 - type: integer 
+	Parameter EW bound to: 8 - type: integer 
+	Parameter SW bound to: 23 - type: integer 
+	Parameter SWR bound to: 26 - type: integer 
+	Parameter EWR bound to: 5 - type: integer 
+	Parameter shift_region bound to: 2'b00 
+	Parameter N bound to: 2 - type: integer 
+	Parameter op bound to: 1'b0 
+	Parameter d bound to: 0 - type: integer 
+	Parameter r_mode bound to: 2'b00 
+INFO: [Synth 8-638] synthesizing module 'Mux_4x1' [/home/gabriel/PG/fpuuart/Mux_4x1.v:23]
+INFO: [Synth 8-226] default block is never used [/home/gabriel/PG/fpuuart/Mux_4x1.v:38]
+INFO: [Synth 8-256] done synthesizing module 'Mux_4x1' (1#1) [/home/gabriel/PG/fpuuart/Mux_4x1.v:23]
+INFO: [Synth 8-638] synthesizing module 'FSM_test' [/home/gabriel/PG/fpuuart/FSM_test.v:23]
+	Parameter est0 bound to: 4'b0000 
+	Parameter est1 bound to: 4'b0001 
+	Parameter est2 bound to: 4'b0010 
+	Parameter est3 bound to: 4'b0011 
+	Parameter est4 bound to: 4'b0100 
+	Parameter est5 bound to: 4'b0101 
+	Parameter est6 bound to: 4'b0110 
+	Parameter est7 bound to: 4'b0111 
+	Parameter est8 bound to: 4'b1000 
+	Parameter est9 bound to: 4'b1001 
+	Parameter est10 bound to: 4'b1010 
+	Parameter est11 bound to: 4'b1011 
+INFO: [Synth 8-256] done synthesizing module 'FSM_test' (2#1) [/home/gabriel/PG/fpuuart/FSM_test.v:23]
+INFO: [Synth 8-638] synthesizing module 'FPU_Add_Subtract_Function' [/home/gabriel/PG/fpuuart/Add-Subt/FPU_Add_Subtract_Function.v:21]
+	Parameter W bound to: 32 - type: integer 
+	Parameter EW bound to: 8 - type: integer 
+	Parameter SW bound to: 23 - type: integer 
+	Parameter SWR bound to: 26 - type: integer 
+	Parameter EWR bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'FSM_Add_Subtract' [/home/gabriel/PG/fpuuart/Add-Subt/FSM_Add_Subtract.v:21]
+	Parameter start bound to: 4'b0000 
+	Parameter load_oper bound to: 4'b0001 
+	Parameter zero_info_state bound to: 4'b0010 
+	Parameter load_diff_exp bound to: 4'b0011 
+	Parameter extra1_64 bound to: 4'b0100 
+	Parameter norm_sgf_first bound to: 4'b0101 
+	Parameter add_subt bound to: 4'b0110 
+	Parameter add_subt_r bound to: 4'b0111 
+	Parameter overflow_add bound to: 4'b1000 
+	Parameter round_sgf bound to: 4'b1001 
+	Parameter overflow_add_r bound to: 4'b1010 
+	Parameter extra2_64 bound to: 4'b1011 
+	Parameter norm_sgf_r bound to: 4'b1100 
+	Parameter load_final_result bound to: 4'b1101 
+	Parameter ready_flag bound to: 4'b1110 
+INFO: [Synth 8-256] done synthesizing module 'FSM_Add_Subtract' (3#1) [/home/gabriel/PG/fpuuart/Add-Subt/FSM_Add_Subtract.v:21]
+INFO: [Synth 8-638] synthesizing module 'RegisterAdd' [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegisterAdd' (4#1) [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+INFO: [Synth 8-638] synthesizing module 'RegisterAdd__parameterized0' [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegisterAdd__parameterized0' (4#1) [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+INFO: [Synth 8-638] synthesizing module 'Oper_Start_In' [/home/gabriel/PG/fpuuart/Add-Subt/Oper_Start_In.v:23]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'RegisterAdd__parameterized1' [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegisterAdd__parameterized1' (4#1) [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+INFO: [Synth 8-638] synthesizing module 'RegisterAdd__parameterized2' [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegisterAdd__parameterized2' (4#1) [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+INFO: [Synth 8-638] synthesizing module 'Comparator' [/home/gabriel/PG/fpuuart/Add-Subt/Comparator.v:23]
+	Parameter W bound to: 31 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Comparator' (5#1) [/home/gabriel/PG/fpuuart/Add-Subt/Comparator.v:23]
+INFO: [Synth 8-638] synthesizing module 'xor_tri' [/home/gabriel/PG/fpuuart/Add-Subt/xor_tri.v:23]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xor_tri' (6#1) [/home/gabriel/PG/fpuuart/Add-Subt/xor_tri.v:23]
+INFO: [Synth 8-638] synthesizing module 'sgn_result' [/home/gabriel/PG/fpuuart/Add-Subt/sgn_result.v:23]
+INFO: [Synth 8-256] done synthesizing module 'sgn_result' (7#1) [/home/gabriel/PG/fpuuart/Add-Subt/sgn_result.v:23]
+INFO: [Synth 8-638] synthesizing module 'MultiplexTxT' [/home/gabriel/PG/fpuuart/Add-Subt/MultiplexTxT.v:23]
+	Parameter W bound to: 31 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MultiplexTxT' (8#1) [/home/gabriel/PG/fpuuart/Add-Subt/MultiplexTxT.v:23]
+INFO: [Synth 8-638] synthesizing module 'RegisterAdd__parameterized3' [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+	Parameter W bound to: 31 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegisterAdd__parameterized3' (8#1) [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+INFO: [Synth 8-638] synthesizing module 'RegisterAdd__parameterized4' [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+	Parameter W bound to: 31 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegisterAdd__parameterized4' (8#1) [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Oper_Start_In' (9#1) [/home/gabriel/PG/fpuuart/Add-Subt/Oper_Start_In.v:23]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC' (10#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Mux_3x1' [/home/gabriel/PG/fpuuart/Add-Subt/Mux_3x1.v:23]
+	Parameter W bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Mux_3x1' (11#1) [/home/gabriel/PG/fpuuart/Add-Subt/Mux_3x1.v:23]
+INFO: [Synth 8-638] synthesizing module 'Exp_Operation' [/home/gabriel/PG/fpuuart/Add-Subt/exp_operation.v:23]
+	Parameter EW bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'add_sub_carry_out' [/home/gabriel/PG/fpuuart/Add-Subt/add_sub_carry_out.v:23]
+	Parameter W bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'add_sub_carry_out' (12#1) [/home/gabriel/PG/fpuuart/Add-Subt/add_sub_carry_out.v:23]
+INFO: [Synth 8-638] synthesizing module 'Comparators' [/home/gabriel/PG/fpuuart/Add-Subt/Comparators.v:21]
+	Parameter W_Exp bound to: 9 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Greater_Comparator' [/home/gabriel/PG/fpuuart/Add-Subt/Greater_Comparator.v:21]
+	Parameter W bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Greater_Comparator' (13#1) [/home/gabriel/PG/fpuuart/Add-Subt/Greater_Comparator.v:21]
+INFO: [Synth 8-638] synthesizing module 'Comparator_Less' [/home/gabriel/PG/fpuuart/Add-Subt/Comparator_Less.v:21]
+	Parameter W bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Comparator_Less' (14#1) [/home/gabriel/PG/fpuuart/Add-Subt/Comparator_Less.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Comparators' (15#1) [/home/gabriel/PG/fpuuart/Add-Subt/Comparators.v:21]
+INFO: [Synth 8-638] synthesizing module 'RegisterAdd__parameterized5' [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+	Parameter W bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegisterAdd__parameterized5' (15#1) [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Exp_Operation' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/exp_operation.v:23]
+INFO: [Synth 8-638] synthesizing module 'Mux_3x1__parameterized0' [/home/gabriel/PG/fpuuart/Add-Subt/Mux_3x1.v:23]
+	Parameter W bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Mux_3x1__parameterized0' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Mux_3x1.v:23]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized0' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 26 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized0' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Barrel_Shifter' [/home/gabriel/PG/fpuuart/Add-Subt/Barrel_shifter.v:23]
+	Parameter SWR bound to: 26 - type: integer 
+	Parameter EWR bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Mux_Array' [/home/gabriel/PG/fpuuart/Add-Subt/Mux_Array.v:23]
+	Parameter SWR bound to: 26 - type: integer 
+	Parameter EWR bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'shift_mux_array' [/home/gabriel/PG/fpuuart/Add-Subt/shift_mux.v:23]
+	Parameter SWR bound to: 26 - type: integer 
+	Parameter LEVEL bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized1' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized1' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized2' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized2' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized3' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized3' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized4' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized4' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized5' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized5' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized6' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized6' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized7' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized7' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized8' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized8' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized9' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized9' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized10' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized10' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized11' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized11' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized12' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized12' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized13' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized13' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized14' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized14' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized15' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized15' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized16' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized16' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized17' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized17' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized18' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized18' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized19' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized19' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized20' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized20' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized21' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized21' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized22' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized22' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized23' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized23' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized24' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized24' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized25' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized25' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized26' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized26' (16#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-256] done synthesizing module 'shift_mux_array' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/shift_mux.v:23]
+INFO: [Synth 8-638] synthesizing module 'shift_mux_array__parameterized0' [/home/gabriel/PG/fpuuart/Add-Subt/shift_mux.v:23]
+	Parameter SWR bound to: 26 - type: integer 
+	Parameter LEVEL bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized27' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized27' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized28' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized28' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized29' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized29' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized30' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized30' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized31' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized31' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized32' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized32' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized33' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized33' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized34' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized34' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized35' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized35' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized36' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized36' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized37' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized37' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized38' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized38' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized39' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized39' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized40' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized40' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized41' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized41' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized42' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized42' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized43' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized43' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized44' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized44' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized45' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized45' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized46' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized46' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized47' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized47' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized48' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized48' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized49' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized49' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized50' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized50' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized51' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized51' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized52' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized52' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-256] done synthesizing module 'shift_mux_array__parameterized0' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/shift_mux.v:23]
+INFO: [Synth 8-638] synthesizing module 'shift_mux_array__parameterized1' [/home/gabriel/PG/fpuuart/Add-Subt/shift_mux.v:23]
+	Parameter SWR bound to: 26 - type: integer 
+	Parameter LEVEL bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized53' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized53' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized54' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized54' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized55' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized55' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized56' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized56' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized57' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized57' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized58' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized58' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized59' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized59' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized60' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized60' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized61' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized61' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized62' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized62' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized63' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized63' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized64' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized64' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized65' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized65' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized66' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized66' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized67' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized67' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized68' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized68' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized69' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized69' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized70' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized70' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized71' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized71' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized72' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized72' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized73' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized73' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized74' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized74' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized75' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized75' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized76' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized76' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized77' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized77' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized78' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized78' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-256] done synthesizing module 'shift_mux_array__parameterized1' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/shift_mux.v:23]
+INFO: [Synth 8-638] synthesizing module 'shift_mux_array__parameterized2' [/home/gabriel/PG/fpuuart/Add-Subt/shift_mux.v:23]
+	Parameter SWR bound to: 26 - type: integer 
+	Parameter LEVEL bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized79' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized79' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized80' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized80' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized81' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized81' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized82' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized82' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized83' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized83' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized84' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized84' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized85' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized85' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized86' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized86' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized87' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized87' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized88' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized88' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized89' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized89' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized90' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized90' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized91' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized91' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized92' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized92' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized93' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized93' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized94' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized94' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized95' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized95' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized96' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized96' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized97' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized97' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized98' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized98' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized99' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized99' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized100' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized100' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized101' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized101' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized102' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized102' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized103' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized103' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized104' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized104' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-256] done synthesizing module 'shift_mux_array__parameterized2' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/shift_mux.v:23]
+INFO: [Synth 8-638] synthesizing module 'shift_mux_array__parameterized3' [/home/gabriel/PG/fpuuart/Add-Subt/shift_mux.v:23]
+	Parameter SWR bound to: 26 - type: integer 
+	Parameter LEVEL bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized105' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized105' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized106' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized106' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized107' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized107' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized108' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized108' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized109' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized109' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized110' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized110' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized111' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized111' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized112' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized112' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized113' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized113' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized114' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized114' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized115' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized115' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized116' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized116' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized117' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized117' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized118' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized118' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized119' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized119' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized120' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized120' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized121' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized121' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized122' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized122' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized123' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized123' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized124' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized124' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized125' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized125' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized126' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized126' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized127' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized127' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized128' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized128' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized129' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized129' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized130' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized130' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-256] done synthesizing module 'shift_mux_array__parameterized3' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/shift_mux.v:23]
+INFO: [Synth 8-638] synthesizing module 'Rotate_Mux_Array' [/home/gabriel/PG/fpuuart/Add-Subt/Rotate_Mux_Array.v:23]
+	Parameter SWR bound to: 26 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized131' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized131' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized132' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized132' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized133' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized133' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized134' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized134' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized135' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized135' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized136' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized136' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized137' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized137' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized138' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized138' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized139' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized139' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized140' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized140' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized141' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized141' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized142' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized142' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized143' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized143' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized144' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized144' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized145' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized145' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized146' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized146' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized147' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized147' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized148' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized148' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized149' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized149' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized150' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized150' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized151' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized151' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized152' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized152' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized153' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized153' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized154' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized154' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized155' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized155' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized156' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized156' (17#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Rotate_Mux_Array' (18#1) [/home/gabriel/PG/fpuuart/Add-Subt/Rotate_Mux_Array.v:23]
+INFO: [Synth 8-638] synthesizing module 'RegisterAdd__parameterized6' [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+	Parameter W bound to: 26 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegisterAdd__parameterized6' (18#1) [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Mux_Array' (19#1) [/home/gabriel/PG/fpuuart/Add-Subt/Mux_Array.v:23]
+INFO: [Synth 8-638] synthesizing module 'RegisterAdd__parameterized7' [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+	Parameter W bound to: 26 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegisterAdd__parameterized7' (19#1) [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Barrel_Shifter' (20#1) [/home/gabriel/PG/fpuuart/Add-Subt/Barrel_shifter.v:23]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized157' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized157' (20#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized158' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 26 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized158' (20#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized159' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 26 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized159' (20#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'Add_Subt' [/home/gabriel/PG/fpuuart/Add-Subt/Add_Subt.v:23]
+	Parameter SWR bound to: 26 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'add_sub_carry_out__parameterized0' [/home/gabriel/PG/fpuuart/Add-Subt/add_sub_carry_out.v:23]
+	Parameter W bound to: 26 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'add_sub_carry_out__parameterized0' (20#1) [/home/gabriel/PG/fpuuart/Add-Subt/add_sub_carry_out.v:23]
+INFO: [Synth 8-638] synthesizing module 'RegisterAdd__parameterized8' [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+	Parameter W bound to: 26 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegisterAdd__parameterized8' (20#1) [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Add_Subt' (21#1) [/home/gabriel/PG/fpuuart/Add-Subt/Add_Subt.v:23]
+INFO: [Synth 8-638] synthesizing module 'LZD' [/home/gabriel/PG/fpuuart/Add-Subt/LZD.v:23]
+	Parameter SWR bound to: 26 - type: integer 
+	Parameter EWR bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Priority_Codec_32' [/home/gabriel/PG/fpuuart/Add-Subt/Priority_Codec_32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Priority_Codec_32' (22#1) [/home/gabriel/PG/fpuuart/Add-Subt/Priority_Codec_32.v:23]
+INFO: [Synth 8-638] synthesizing module 'RegisterAdd__parameterized9' [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+	Parameter W bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegisterAdd__parameterized9' (22#1) [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+INFO: [Synth 8-256] done synthesizing module 'LZD' (23#1) [/home/gabriel/PG/fpuuart/Add-Subt/LZD.v:23]
+INFO: [Synth 8-638] synthesizing module 'Round_Sgf_Dec' [/home/gabriel/PG/fpuuart/Add-Subt/Round_Sgf_Dec.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Round_Sgf_Dec' (24#1) [/home/gabriel/PG/fpuuart/Add-Subt/Round_Sgf_Dec.v:23]
+INFO: [Synth 8-638] synthesizing module 'Tenth_Phase' [/home/gabriel/PG/fpuuart/Add-Subt/Tenth_Phase.v:21]
+	Parameter W bound to: 32 - type: integer 
+	Parameter EW bound to: 8 - type: integer 
+	Parameter SW bound to: 23 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Mux_3x1__parameterized1' [/home/gabriel/PG/fpuuart/Add-Subt/Mux_3x1.v:23]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Mux_3x1__parameterized1' (24#1) [/home/gabriel/PG/fpuuart/Add-Subt/Mux_3x1.v:23]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_AC__parameterized160' [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+	Parameter W bound to: 23 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_AC__parameterized160' (24#1) [/home/gabriel/PG/fpuuart/Add-Subt/Multiplexer_AC.v:21]
+INFO: [Synth 8-638] synthesizing module 'RegisterAdd__parameterized10' [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegisterAdd__parameterized10' (24#1) [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Tenth_Phase' (25#1) [/home/gabriel/PG/fpuuart/Add-Subt/Tenth_Phase.v:21]
+INFO: [Synth 8-256] done synthesizing module 'FPU_Add_Subtract_Function' (26#1) [/home/gabriel/PG/fpuuart/Add-Subt/FPU_Add_Subtract_Function.v:21]
+WARNING: [Synth 8-350] instance 'Add_Subt_uart' of module 'FPU_Add_Subtract_Function' requires 12 connections, but only 10 given [/home/gabriel/PG/fpuuart/FPU_UART.v:83]
+INFO: [Synth 8-638] synthesizing module 'Uart' [/home/gabriel/PG/fpuuart/Uart.v:15]
+INFO: [Synth 8-638] synthesizing module 'Coun_Baud' [/home/gabriel/PG/fpuuart/Coun_Baud.v:14]
+	Parameter N bound to: 10 - type: integer 
+	Parameter M bound to: 656 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Coun_Baud' (27#1) [/home/gabriel/PG/fpuuart/Coun_Baud.v:14]
+INFO: [Synth 8-638] synthesizing module 'ReceptorRX' [/home/gabriel/PG/fpuuart/ReceptorRX.v:15]
+INFO: [Synth 8-638] synthesizing module 'UBuffer' [/home/gabriel/PG/fpuuart/UBuffer.v:14]
+INFO: [Synth 8-256] done synthesizing module 'UBuffer' (28#1) [/home/gabriel/PG/fpuuart/UBuffer.v:14]
+INFO: [Synth 8-638] synthesizing module 'Receptor' [/home/gabriel/PG/fpuuart/Receptor.v:14]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+	Parameter idle bound to: 2'b00 
+	Parameter start bound to: 2'b01 
+	Parameter data bound to: 2'b10 
+	Parameter stop bound to: 2'b11 
+INFO: [Synth 8-256] done synthesizing module 'Receptor' (29#1) [/home/gabriel/PG/fpuuart/Receptor.v:14]
+INFO: [Synth 8-256] done synthesizing module 'ReceptorRX' (30#1) [/home/gabriel/PG/fpuuart/ReceptorRX.v:15]
+INFO: [Synth 8-638] synthesizing module 'Transmisor_TX' [/home/gabriel/PG/fpuuart/Transmisor_TX.v:15]
+INFO: [Synth 8-638] synthesizing module 'Transmisor' [/home/gabriel/PG/fpuuart/Transmisor.v:15]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+	Parameter idle bound to: 2'b00 
+	Parameter start bound to: 2'b01 
+	Parameter data bound to: 2'b10 
+	Parameter stop bound to: 2'b11 
+INFO: [Synth 8-256] done synthesizing module 'Transmisor' (31#1) [/home/gabriel/PG/fpuuart/Transmisor.v:15]
+INFO: [Synth 8-256] done synthesizing module 'Transmisor_TX' (32#1) [/home/gabriel/PG/fpuuart/Transmisor_TX.v:15]
+INFO: [Synth 8-256] done synthesizing module 'Uart' (33#1) [/home/gabriel/PG/fpuuart/Uart.v:15]
+WARNING: [Synth 8-350] instance 'uart_mod' of module 'Uart' requires 9 connections, but only 6 given [/home/gabriel/PG/fpuuart/FPU_UART.v:115]
+INFO: [Synth 8-638] synthesizing module 'ROM_test' [/home/gabriel/PG/fpuuart/ROM_test.v:23]
+	Parameter W bound to: 32 - type: integer 
+	Parameter N bound to: 0 - type: integer 
+	Parameter ROM_FILE32_A bound to: /home/gabriel/Documents/Hexadecimal_A.txt - type: string 
+	Parameter ROM_FILE64_A bound to: /media/francis/Acer/Proyecto de graduacion/Link to GitHub/Proyecto_De_Graduacion/TXTVerification/Hexadecimal_A.txt - type: string 
+	Parameter ROM_FILE32_B bound to: /home/gabriel/Documents/Hexadecimal_B.txt - type: string 
+	Parameter ROM_FILE64_B bound to: /media/francis/Acer/Proyecto de graduacion/Link to GitHub/Proyecto_De_Graduacion/TXTVerification/Hexadecimal_B.txt - type: string 
+INFO: [Synth 8-3876] $readmem data file '/home/gabriel/Documents/Hexadecimal_A.txt' is read successfully [/home/gabriel/PG/fpuuart/ROM_test.v:44]
+INFO: [Synth 8-256] done synthesizing module 'ROM_test' (34#1) [/home/gabriel/PG/fpuuart/ROM_test.v:23]
+INFO: [Synth 8-638] synthesizing module 'ROM_test__parameterized0' [/home/gabriel/PG/fpuuart/ROM_test.v:23]
+	Parameter W bound to: 32 - type: integer 
+	Parameter N bound to: 1 - type: integer 
+	Parameter ROM_FILE32_A bound to: /home/gabriel/Documents/Hexadecimal_A.txt - type: string 
+	Parameter ROM_FILE64_A bound to: /media/francis/Acer/Proyecto de graduacion/Link to GitHub/Proyecto_De_Graduacion/TXTVerification/Hexadecimal_A.txt - type: string 
+	Parameter ROM_FILE32_B bound to: /home/gabriel/Documents/Hexadecimal_B.txt - type: string 
+	Parameter ROM_FILE64_B bound to: /media/francis/Acer/Proyecto de graduacion/Link to GitHub/Proyecto_De_Graduacion/TXTVerification/Hexadecimal_B.txt - type: string 
+INFO: [Synth 8-3876] $readmem data file '/home/gabriel/Documents/Hexadecimal_B.txt' is read successfully [/home/gabriel/PG/fpuuart/ROM_test.v:46]
+INFO: [Synth 8-256] done synthesizing module 'ROM_test__parameterized0' (34#1) [/home/gabriel/PG/fpuuart/ROM_test.v:23]
+INFO: [Synth 8-638] synthesizing module 'cont_test' [/home/gabriel/PG/fpuuart/cont_test.v:23]
+	Parameter W bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cont_test' (35#1) [/home/gabriel/PG/fpuuart/cont_test.v:23]
+WARNING: [Synth 8-350] instance 'cont_address' of module 'cont_test' requires 8 connections, but only 7 given [/home/gabriel/PG/fpuuart/FPU_UART.v:138]
+INFO: [Synth 8-638] synthesizing module 'cont_test__parameterized0' [/home/gabriel/PG/fpuuart/cont_test.v:23]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cont_test__parameterized0' (35#1) [/home/gabriel/PG/fpuuart/cont_test.v:23]
+WARNING: [Synth 8-350] instance 'con_mux_data' of module 'cont_test' requires 8 connections, but only 7 given [/home/gabriel/PG/fpuuart/FPU_UART.v:149]
+INFO: [Synth 8-256] done synthesizing module 'FPU_UART' (36#1) [/home/gabriel/PG/fpuuart/FPU_UART.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1075.188 ; gain = 228.098 ; free physical = 796 ; free virtual = 8383
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin uart_mod:RX to constant 0 [/home/gabriel/PG/fpuuart/FPU_UART.v:115]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1075.188 ; gain = 228.098 ; free physical = 796 ; free virtual = 8383
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/gabriel/PG/fpuuart/Nexys4_Master.xdc]
+Finished Parsing XDC File [/home/gabriel/PG/fpuuart/Nexys4_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/gabriel/PG/fpuuart/Nexys4_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FPU_UART_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FPU_UART_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1382.805 ; gain = 0.000 ; free physical = 619 ; free virtual = 8203
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10507 
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1382.805 ; gain = 535.715 ; free physical = 614 ; free virtual = 8198
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1382.805 ; gain = 535.715 ; free physical = 614 ; free virtual = 8198
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1382.805 ; gain = 535.715 ; free physical = 614 ; free virtual = 8198
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'FSM_test'
+INFO: [Synth 8-5544] ROM "TX_START" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "load_ch" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enab_ch" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enab_address" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "load_address" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ack_op" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "beg_op" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'FSM_Add_Subtract'
+INFO: [Synth 8-5544] ROM "ready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rst_int" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ctrl_c_o" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ctrl_b_load_o" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "load_7_o" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "load_6_o" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "load_5_o" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "load_4_o" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "load_3_o" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/home/gabriel/PG/fpuuart/Add-Subt/add_sub_carry_out.v:33]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/home/gabriel/PG/fpuuart/Add-Subt/add_sub_carry_out.v:33]
+INFO: [Synth 8-5546] ROM "Round_Flag_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "max_tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rx_done_tick" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "TX_Done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "max_tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "min_tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "max_tick" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "min_tick" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    est0 |                             0000 |                             0000
+                    est1 |                             0001 |                             0001
+                    est2 |                             0010 |                             0010
+                    est3 |                             0011 |                             0011
+                    est4 |                             0100 |                             0100
+                    est5 |                             0101 |                             0101
+                    est6 |                             0110 |                             0110
+                    est7 |                             0111 |                             0111
+                    est9 |                             1000 |                             1001
+                   est11 |                             1001 |                             1011
+                   est10 |                             1010 |                             1010
+                    est8 |                             1011 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'FSM_test'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   start |                             0000 |                             0000
+               load_oper |                             0001 |                             0001
+         zero_info_state |                             0010 |                             0010
+           load_diff_exp |                             0011 |                             0011
+               extra1_64 |                             0100 |                             0100
+          norm_sgf_first |                             0101 |                             0101
+               round_sgf |                             0110 |                             1001
+              add_subt_r |                             0111 |                             0111
+          overflow_add_r |                             1000 |                             1010
+               extra2_64 |                             1001 |                             1011
+              norm_sgf_r |                             1010 |                             1100
+       load_final_result |                             1011 |                             1101
+              ready_flag |                             1100 |                             1110
+                add_subt |                             1101 |                             0110
+            overflow_add |                             1110 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'FSM_Add_Subtract'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1382.805 ; gain = 535.715 ; free physical = 595 ; free virtual = 8179
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     27 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               31 Bit    Registers := 2     
+	               26 Bit    Registers := 3     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 3     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 19    
+	  16 Input      4 Bit        Muxes := 1     
+	  18 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	  15 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 196   
+	  15 Input      1 Bit        Muxes := 15    
+	   7 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Mux_4x1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+Module FSM_test 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      4 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 7     
+Module FSM_Add_Subtract 
+Detailed RTL Component Info : 
++---Muxes : 
+	  18 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	  15 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	  15 Input      1 Bit        Muxes := 15    
+Module RegisterAdd 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module RegisterAdd__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module RegisterAdd__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module RegisterAdd__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module xor_tri 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module MultiplexTxT 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 2     
+Module RegisterAdd__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	               31 Bit    Registers := 1     
+Module RegisterAdd__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	               31 Bit    Registers := 1     
+Module Multiplexer_AC 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module Mux_3x1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+Module add_sub_carry_out 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module RegisterAdd__parameterized5 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module Mux_3x1__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized131 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized132 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized133 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized134 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized135 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized136 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized137 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized138 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized139 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized140 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized141 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized142 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized143 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized144 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized145 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized146 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized147 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized148 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized149 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized150 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized151 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized152 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized153 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized154 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized155 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized156 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module RegisterAdd__parameterized6 
+Detailed RTL Component Info : 
++---Registers : 
+	               26 Bit    Registers := 1     
+Module Multiplexer_AC__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized9 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized10 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized11 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized12 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized13 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized14 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized15 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized16 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized17 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized18 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized19 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized20 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized21 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized22 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized23 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized24 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized25 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized26 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized27 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized28 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized29 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized30 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized31 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized33 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized34 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized35 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized36 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized37 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized38 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized39 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized40 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized41 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized42 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized43 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized44 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized45 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized46 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized47 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized48 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized49 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized50 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized51 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized52 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized53 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized54 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized55 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized56 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized57 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized58 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized59 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized60 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized61 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized62 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized63 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized64 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized65 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized66 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized67 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized68 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized69 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized70 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized71 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized72 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized73 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized74 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized75 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized76 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized77 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized78 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized79 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized80 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized81 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized82 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized83 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized84 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized85 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized86 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized87 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized88 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized89 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized90 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized91 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized92 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized93 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized94 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized95 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized96 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized97 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized98 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized99 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized100 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized101 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized102 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized103 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized104 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized105 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized106 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized107 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized108 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized109 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized110 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized111 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized112 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized113 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized114 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized115 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized116 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized117 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized118 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized119 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized120 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized121 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized122 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized123 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized124 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized125 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized126 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized127 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized128 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized129 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized130 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module RegisterAdd__parameterized7 
+Detailed RTL Component Info : 
++---Registers : 
+	               26 Bit    Registers := 1     
+Module Multiplexer_AC__parameterized157 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized158 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized159 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+Module add_sub_carry_out__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     27 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+Module RegisterAdd__parameterized8 
+Detailed RTL Component Info : 
++---Registers : 
+	               26 Bit    Registers := 1     
+Module Priority_Codec_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 19    
+Module RegisterAdd__parameterized9 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module Round_Sgf_Dec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input      1 Bit        Muxes := 1     
+Module Mux_3x1__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+Module Multiplexer_AC__parameterized160 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 1     
+Module RegisterAdd__parameterized10 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module Coun_Baud 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module UBuffer 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module Receptor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 2     
+Module Transmisor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 2     
+Module cont_test 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module cont_test__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1382.812 ; gain = 535.723 ; free physical = 595 ; free virtual = 8179
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'Sel_A/Q_reg[0:0]' into 'Sel_D/Q_reg[0:0]' [/home/gabriel/PG/fpuuart/Add-Subt/RegisterAdd.v:33]
+INFO: [Synth 8-5546] ROM "ICONT/max_tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cont_address/max_tick" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1437.805 ; gain = 590.715 ; free physical = 476 ; free virtual = 8049
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1437.805 ; gain = 590.715 ; free physical = 476 ; free virtual = 8049
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|ROM_test    | rom        | 1024x32       | LUT            | 
+|ROM_test    | rom__1     | 1024x32       | LUT            | 
+|FPU_UART    | rom        | 1024x32       | LUT            | 
+|FPU_UART    | rom__2     | 1024x32       | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Add_Subt_uart/Oper_Start_in_module/ASRegister/Q_reg[0] )
+INFO: [Synth 8-3886] merging instance '\Add_Subt_uart/Oper_Start_in_module/XRegister/Q_reg[27] ' (FDCE) to '\Add_Subt_uart/Oper_Start_in_module/XRegister/Q_reg[28] '
+INFO: [Synth 8-3886] merging instance '\Add_Subt_uart/Oper_Start_in_module/YRegister/Q_reg[28] ' (FDCE) to '\Add_Subt_uart/Oper_Start_in_module/YRegister/Q_reg[27] '
+INFO: [Synth 8-3886] merging instance '\Add_Subt_uart/Oper_Start_in_module/XRegister/Q_reg[28] ' (FDCE) to '\Add_Subt_uart/Oper_Start_in_module/XRegister/Q_reg[29] '
+INFO: [Synth 8-3886] merging instance '\Add_Subt_uart/Oper_Start_in_module/YRegister/Q_reg[29] ' (FDCE) to '\Add_Subt_uart/Oper_Start_in_module/YRegister/Q_reg[27] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Add_Subt_uart/Sel_D/Q_reg[0] )
+INFO: [Synth 8-3886] merging instance '\Add_Subt_uart/Oper_Start_in_module/mRegister/Q_reg[28] ' (FDCE) to '\Add_Subt_uart/Oper_Start_in_module/mRegister/Q_reg[27] '
+INFO: [Synth 8-3886] merging instance '\Add_Subt_uart/Oper_Start_in_module/MRegister/Q_reg[28] ' (FDCE) to '\Add_Subt_uart/Oper_Start_in_module/MRegister/Q_reg[27] '
+INFO: [Synth 8-3886] merging instance '\Add_Subt_uart/Oper_Start_in_module/mRegister/Q_reg[29] ' (FDCE) to '\Add_Subt_uart/Oper_Start_in_module/mRegister/Q_reg[27] '
+INFO: [Synth 8-3886] merging instance '\Add_Subt_uart/Oper_Start_in_module/MRegister/Q_reg[29] ' (FDCE) to '\Add_Subt_uart/Oper_Start_in_module/MRegister/Q_reg[27] '
+WARNING: [Synth 8-3332] Sequential element (\Add_Subt_uart/Oper_Start_in_module/YRegister/Q_reg[29] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\Add_Subt_uart/Oper_Start_in_module/YRegister/Q_reg[28] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\Add_Subt_uart/Oper_Start_in_module/XRegister/Q_reg[28] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\Add_Subt_uart/Oper_Start_in_module/XRegister/Q_reg[27] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\Add_Subt_uart/Oper_Start_in_module/MRegister/Q_reg[29] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\Add_Subt_uart/Oper_Start_in_module/MRegister/Q_reg[28] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\Add_Subt_uart/Sel_D/Q_reg[0] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\Add_Subt_uart/Oper_Start_in_module/ASRegister/Q_reg[0] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\Add_Subt_uart/Oper_Start_in_module/mRegister/Q_reg[29] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\Add_Subt_uart/Oper_Start_in_module/mRegister/Q_reg[28] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Receptor/s_reg_reg[3] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Receptor/s_reg_reg[2] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Receptor/s_reg_reg[1] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Receptor/s_reg_reg[0] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Receptor/n_reg_reg[2] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Receptor/n_reg_reg[1] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Receptor/n_reg_reg[0] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Receptor/state_reg_reg[1] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Receptor/state_reg_reg[0] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Receptor/b_reg_reg[7] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Receptor/b_reg_reg[6] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Receptor/b_reg_reg[5] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Receptor/b_reg_reg[4] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Receptor/b_reg_reg[3] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Receptor/b_reg_reg[2] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Receptor/b_reg_reg[1] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Receptor/b_reg_reg[0] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Buffer/datos_reg[7] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Buffer/datos_reg[6] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Buffer/datos_reg[5] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Buffer/datos_reg[4] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Buffer/datos_reg[3] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Buffer/datos_reg[2] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Buffer/datos_reg[1] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Buffer/datos_reg[0] ) is unused and will be removed from module FPU_UART.
+WARNING: [Synth 8-3332] Sequential element (\uart_mod/IRECEPTOR/RX_Buffer/listo_reg ) is unused and will be removed from module FPU_UART.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1437.805 ; gain = 590.715 ; free physical = 462 ; free virtual = 8049
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1437.805 ; gain = 590.715 ; free physical = 462 ; free virtual = 8049
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1437.805 ; gain = 590.715 ; free physical = 455 ; free virtual = 8029
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1437.805 ; gain = 590.715 ; free physical = 456 ; free virtual = 8029
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:44 . Memory (MB): peak = 1458.836 ; gain = 611.746 ; free physical = 436 ; free virtual = 8009
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:44 ; elapsed = 00:00:44 . Memory (MB): peak = 1458.836 ; gain = 611.746 ; free physical = 436 ; free virtual = 8009
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:44 ; elapsed = 00:00:44 . Memory (MB): peak = 1458.836 ; gain = 611.746 ; free physical = 436 ; free virtual = 8009
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1458.836 ; gain = 611.746 ; free physical = 436 ; free virtual = 8009
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1458.836 ; gain = 611.746 ; free physical = 436 ; free virtual = 8009
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1458.836 ; gain = 611.746 ; free physical = 437 ; free virtual = 8009
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1458.836 ; gain = 611.746 ; free physical = 437 ; free virtual = 8009
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1458.836 ; gain = 611.746 ; free physical = 437 ; free virtual = 8009
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1458.836 ; gain = 611.746 ; free physical = 437 ; free virtual = 8009
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    17|
+|3     |LUT1   |     2|
+|4     |LUT2   |    23|
+|5     |LUT3   |   163|
+|6     |LUT4   |   103|
+|7     |LUT5   |    47|
+|8     |LUT6   |  1140|
+|9     |MUXF7  |   448|
+|10    |MUXF8  |   224|
+|11    |FDCE   |   355|
+|12    |FDPE   |     1|
+|13    |FDRE   |     9|
+|14    |IBUF   |     2|
+|15    |OBUF   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------------+-----------------------------+------+
+|      |Instance                         |Module                       |Cells |
++------+---------------------------------+-----------------------------+------+
+|1     |top                              |                             |  2536|
+|2     |  Add_Subt_uart                  |FPU_Add_Subtract_Function    |   663|
+|3     |    Add_Subt_Sgf_module          |Add_Subt                     |   129|
+|4     |      Add_Subt_Result            |RegisterAdd__parameterized8  |   128|
+|5     |      Add_overflow_Result        |RegisterAdd_3                |     1|
+|6     |    Barrel_Shifter_module        |Barrel_Shifter               |    73|
+|7     |      Mux_Array                  |Mux_Array                    |    46|
+|8     |        Mid_Reg                  |RegisterAdd__parameterized6  |    46|
+|9     |      Output_Reg                 |RegisterAdd__parameterized7  |    27|
+|10    |    Exp_Operation_Module         |Exp_Operation                |    57|
+|11    |      Overflow                   |RegisterAdd_1                |    24|
+|12    |      Underflow                  |RegisterAdd_2                |     2|
+|13    |      exp_add_subt               |add_sub_carry_out            |    15|
+|14    |      exp_result                 |RegisterAdd__parameterized5  |    16|
+|15    |    FS_Module                    |FSM_Add_Subtract             |    30|
+|16    |    Leading_Zero_Detector_Module |LZD                          |     5|
+|17    |      Output_Reg                 |RegisterAdd__parameterized9  |     5|
+|18    |    Oper_Start_in_module         |Oper_Start_In                |   289|
+|19    |      MRegister                  |RegisterAdd__parameterized3  |    29|
+|20    |      SignRegister               |RegisterAdd_0                |     1|
+|21    |      XRegister                  |RegisterAdd__parameterized1  |   148|
+|22    |      YRegister                  |RegisterAdd__parameterized2  |    82|
+|23    |      mRegister                  |RegisterAdd__parameterized4  |    29|
+|24    |    Sel_B                        |RegisterAdd__parameterized0  |    44|
+|25    |    Sel_C                        |RegisterAdd                  |     4|
+|26    |    final_result_ieee_Module     |Tenth_Phase                  |    32|
+|27    |      Final_Result_IEEE          |RegisterAdd__parameterized10 |    32|
+|28    |  con_mux_data                   |cont_test__parameterized0    |     4|
+|29    |  cont_address                   |cont_test                    |  1757|
+|30    |  fsm_test_uart                  |FSM_test                     |    19|
+|31    |  \genblk1.mux_32_uart           |Mux_4x1                      |     8|
+|32    |  uart_mod                       |Uart                         |    81|
+|33    |    ICONT                        |Coun_Baud                    |    29|
+|34    |    ITRANSMISOR                  |Transmisor_TX                |    52|
+|35    |      TXTrasmisor                |Transmisor                   |    42|
+|36    |      TX_Buffer                  |UBuffer                      |    10|
++------+---------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1458.836 ; gain = 611.746 ; free physical = 437 ; free virtual = 8009
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 36 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1458.836 ; gain = 178.406 ; free physical = 437 ; free virtual = 8009
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:45 . Memory (MB): peak = 1458.836 ; gain = 611.746 ; free physical = 437 ; free virtual = 8009
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+505 Infos, 41 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:45 . Memory (MB): peak = 1458.836 ; gain = 540.414 ; free physical = 426 ; free virtual = 8010
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1490.852 ; gain = 0.000 ; free physical = 424 ; free virtual = 8008
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 22 13:12:03 2016...

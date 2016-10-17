@@ -1,0 +1,379 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Sep 19 19:39:15 2016
+# Process ID: 23497
+# Current directory: /home/gabriel/PG/FiltroPB/FiltroPB.runs/synth_1
+# Command line: vivado -log DecosSuma.vds -mode batch -messageDb vivado.pb -notrace -source DecosSuma.tcl
+# Log file: /home/gabriel/PG/FiltroPB/FiltroPB.runs/synth_1/DecosSuma.vds
+# Journal file: /home/gabriel/PG/FiltroPB/FiltroPB.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source DecosSuma.tcl -notrace
+Command: synth_design -top DecosSuma -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23507 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1033.816 ; gain = 186.723 ; free physical = 298 ; free virtual = 6231
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DecosSuma' [/home/gabriel/PG/Verilog/DecosSuma.v:23]
+	Parameter SAMPLES bound to: 128 - type: integer 
+	Parameter OSF bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Deco_Sum' [/home/gabriel/PG/Verilog/Deco_Sum.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Deco_Sum' (1#1) [/home/gabriel/PG/Verilog/Deco_Sum.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DecosSuma' (2#1) [/home/gabriel/PG/Verilog/DecosSuma.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1073.191 ; gain = 226.098 ; free physical = 258 ; free virtual = 6191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1073.191 ; gain = 226.098 ; free physical = 258 ; free virtual = 6191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1081.195 ; gain = 234.102 ; free physical = 258 ; free virtual = 6191
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1097.211 ; gain = 250.117 ; free physical = 242 ; free virtual = 6175
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1168.227 ; gain = 321.133 ; free physical = 174 ; free virtual = 6108
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1297.844 ; gain = 450.750 ; free physical = 154 ; free virtual = 6030
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1297.844 ; gain = 450.750 ; free physical = 154 ; free virtual = 6030
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|Deco_Sum    | rom        | 256x4         | LUT            | 
+|DecosSuma   | rom__128   | 256x4         | LUT            | 
+|DecosSuma   | rom__129   | 256x4         | LUT            | 
+|DecosSuma   | rom__130   | 256x4         | LUT            | 
+|DecosSuma   | rom__131   | 256x4         | LUT            | 
+|DecosSuma   | rom__132   | 256x4         | LUT            | 
+|DecosSuma   | rom__133   | 256x4         | LUT            | 
+|DecosSuma   | rom__134   | 256x4         | LUT            | 
+|DecosSuma   | rom__135   | 256x4         | LUT            | 
+|DecosSuma   | rom__136   | 256x4         | LUT            | 
+|DecosSuma   | rom__137   | 256x4         | LUT            | 
+|DecosSuma   | rom__138   | 256x4         | LUT            | 
+|DecosSuma   | rom__139   | 256x4         | LUT            | 
+|DecosSuma   | rom__140   | 256x4         | LUT            | 
+|DecosSuma   | rom__141   | 256x4         | LUT            | 
+|DecosSuma   | rom__142   | 256x4         | LUT            | 
+|DecosSuma   | rom__143   | 256x4         | LUT            | 
+|DecosSuma   | rom__144   | 256x4         | LUT            | 
+|DecosSuma   | rom__145   | 256x4         | LUT            | 
+|DecosSuma   | rom__146   | 256x4         | LUT            | 
+|DecosSuma   | rom__147   | 256x4         | LUT            | 
+|DecosSuma   | rom__148   | 256x4         | LUT            | 
+|DecosSuma   | rom__149   | 256x4         | LUT            | 
+|DecosSuma   | rom__150   | 256x4         | LUT            | 
+|DecosSuma   | rom__151   | 256x4         | LUT            | 
+|DecosSuma   | rom__152   | 256x4         | LUT            | 
+|DecosSuma   | rom__153   | 256x4         | LUT            | 
+|DecosSuma   | rom__154   | 256x4         | LUT            | 
+|DecosSuma   | rom__155   | 256x4         | LUT            | 
+|DecosSuma   | rom__156   | 256x4         | LUT            | 
+|DecosSuma   | rom__157   | 256x4         | LUT            | 
+|DecosSuma   | rom__158   | 256x4         | LUT            | 
+|DecosSuma   | rom__159   | 256x4         | LUT            | 
+|DecosSuma   | rom__160   | 256x4         | LUT            | 
+|DecosSuma   | rom__161   | 256x4         | LUT            | 
+|DecosSuma   | rom__162   | 256x4         | LUT            | 
+|DecosSuma   | rom__163   | 256x4         | LUT            | 
+|DecosSuma   | rom__164   | 256x4         | LUT            | 
+|DecosSuma   | rom__165   | 256x4         | LUT            | 
+|DecosSuma   | rom__166   | 256x4         | LUT            | 
+|DecosSuma   | rom__167   | 256x4         | LUT            | 
+|DecosSuma   | rom__168   | 256x4         | LUT            | 
+|DecosSuma   | rom__169   | 256x4         | LUT            | 
+|DecosSuma   | rom__170   | 256x4         | LUT            | 
+|DecosSuma   | rom__171   | 256x4         | LUT            | 
+|DecosSuma   | rom__172   | 256x4         | LUT            | 
+|DecosSuma   | rom__173   | 256x4         | LUT            | 
+|DecosSuma   | rom__174   | 256x4         | LUT            | 
+|DecosSuma   | rom__175   | 256x4         | LUT            | 
+|DecosSuma   | rom__176   | 256x4         | LUT            | 
+|DecosSuma   | rom__177   | 256x4         | LUT            | 
+|DecosSuma   | rom__178   | 256x4         | LUT            | 
+|DecosSuma   | rom__179   | 256x4         | LUT            | 
+|DecosSuma   | rom__180   | 256x4         | LUT            | 
+|DecosSuma   | rom__181   | 256x4         | LUT            | 
+|DecosSuma   | rom__182   | 256x4         | LUT            | 
+|DecosSuma   | rom__183   | 256x4         | LUT            | 
+|DecosSuma   | rom__184   | 256x4         | LUT            | 
+|DecosSuma   | rom__185   | 256x4         | LUT            | 
+|DecosSuma   | rom__186   | 256x4         | LUT            | 
+|DecosSuma   | rom__187   | 256x4         | LUT            | 
+|DecosSuma   | rom__188   | 256x4         | LUT            | 
+|DecosSuma   | rom__189   | 256x4         | LUT            | 
+|DecosSuma   | rom__190   | 256x4         | LUT            | 
+|DecosSuma   | rom__191   | 256x4         | LUT            | 
+|DecosSuma   | rom__192   | 256x4         | LUT            | 
+|DecosSuma   | rom__193   | 256x4         | LUT            | 
+|DecosSuma   | rom__194   | 256x4         | LUT            | 
+|DecosSuma   | rom__195   | 256x4         | LUT            | 
+|DecosSuma   | rom__196   | 256x4         | LUT            | 
+|DecosSuma   | rom__197   | 256x4         | LUT            | 
+|DecosSuma   | rom__198   | 256x4         | LUT            | 
+|DecosSuma   | rom__199   | 256x4         | LUT            | 
+|DecosSuma   | rom__200   | 256x4         | LUT            | 
+|DecosSuma   | rom__201   | 256x4         | LUT            | 
+|DecosSuma   | rom__202   | 256x4         | LUT            | 
+|DecosSuma   | rom__203   | 256x4         | LUT            | 
+|DecosSuma   | rom__204   | 256x4         | LUT            | 
+|DecosSuma   | rom__205   | 256x4         | LUT            | 
+|DecosSuma   | rom__206   | 256x4         | LUT            | 
+|DecosSuma   | rom__207   | 256x4         | LUT            | 
+|DecosSuma   | rom__208   | 256x4         | LUT            | 
+|DecosSuma   | rom__209   | 256x4         | LUT            | 
+|DecosSuma   | rom__210   | 256x4         | LUT            | 
+|DecosSuma   | rom__211   | 256x4         | LUT            | 
+|DecosSuma   | rom__212   | 256x4         | LUT            | 
+|DecosSuma   | rom__213   | 256x4         | LUT            | 
+|DecosSuma   | rom__214   | 256x4         | LUT            | 
+|DecosSuma   | rom__215   | 256x4         | LUT            | 
+|DecosSuma   | rom__216   | 256x4         | LUT            | 
+|DecosSuma   | rom__217   | 256x4         | LUT            | 
+|DecosSuma   | rom__218   | 256x4         | LUT            | 
+|DecosSuma   | rom__219   | 256x4         | LUT            | 
+|DecosSuma   | rom__220   | 256x4         | LUT            | 
+|DecosSuma   | rom__221   | 256x4         | LUT            | 
+|DecosSuma   | rom__222   | 256x4         | LUT            | 
+|DecosSuma   | rom__223   | 256x4         | LUT            | 
+|DecosSuma   | rom__224   | 256x4         | LUT            | 
+|DecosSuma   | rom__225   | 256x4         | LUT            | 
+|DecosSuma   | rom__226   | 256x4         | LUT            | 
+|DecosSuma   | rom__227   | 256x4         | LUT            | 
+|DecosSuma   | rom__228   | 256x4         | LUT            | 
+|DecosSuma   | rom__229   | 256x4         | LUT            | 
+|DecosSuma   | rom__230   | 256x4         | LUT            | 
+|DecosSuma   | rom__231   | 256x4         | LUT            | 
+|DecosSuma   | rom__232   | 256x4         | LUT            | 
+|DecosSuma   | rom__233   | 256x4         | LUT            | 
+|DecosSuma   | rom__234   | 256x4         | LUT            | 
+|DecosSuma   | rom__235   | 256x4         | LUT            | 
+|DecosSuma   | rom__236   | 256x4         | LUT            | 
+|DecosSuma   | rom__237   | 256x4         | LUT            | 
+|DecosSuma   | rom__238   | 256x4         | LUT            | 
+|DecosSuma   | rom__239   | 256x4         | LUT            | 
+|DecosSuma   | rom__240   | 256x4         | LUT            | 
+|DecosSuma   | rom__241   | 256x4         | LUT            | 
+|DecosSuma   | rom__242   | 256x4         | LUT            | 
+|DecosSuma   | rom__243   | 256x4         | LUT            | 
+|DecosSuma   | rom__244   | 256x4         | LUT            | 
+|DecosSuma   | rom__245   | 256x4         | LUT            | 
+|DecosSuma   | rom__246   | 256x4         | LUT            | 
+|DecosSuma   | rom__247   | 256x4         | LUT            | 
+|DecosSuma   | rom__248   | 256x4         | LUT            | 
+|DecosSuma   | rom__249   | 256x4         | LUT            | 
+|DecosSuma   | rom__250   | 256x4         | LUT            | 
+|DecosSuma   | rom__251   | 256x4         | LUT            | 
+|DecosSuma   | rom__252   | 256x4         | LUT            | 
+|DecosSuma   | rom__253   | 256x4         | LUT            | 
+|DecosSuma   | rom__254   | 256x4         | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1297.844 ; gain = 450.750 ; free physical = 140 ; free virtual = 6026
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1297.844 ; gain = 450.750 ; free physical = 140 ; free virtual = 6026
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1297.844 ; gain = 450.750 ; free physical = 140 ; free virtual = 6026
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1297.844 ; gain = 450.750 ; free physical = 140 ; free virtual = 6026
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1297.844 ; gain = 450.750 ; free physical = 140 ; free virtual = 6026
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1297.844 ; gain = 450.750 ; free physical = 140 ; free virtual = 6026
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1297.844 ; gain = 450.750 ; free physical = 139 ; free virtual = 6026
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1297.844 ; gain = 450.750 ; free physical = 139 ; free virtual = 6026
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1297.844 ; gain = 450.750 ; free physical = 139 ; free virtual = 6026
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1297.844 ; gain = 450.750 ; free physical = 139 ; free virtual = 6026
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1297.844 ; gain = 450.750 ; free physical = 139 ; free virtual = 6026
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1297.844 ; gain = 450.750 ; free physical = 139 ; free virtual = 6026
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT4 |   256|
+|2     |LUT5 |   512|
+|3     |LUT6 |   768|
+|4     |IBUF |  1024|
+|5     |OBUF |   512|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  3072|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1297.844 ; gain = 450.750 ; free physical = 139 ; free virtual = 6026
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1297.844 ; gain = 325.027 ; free physical = 139 ; free virtual = 6026
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1297.844 ; gain = 450.750 ; free physical = 139 ; free virtual = 6026
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1024 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'DecosSuma' is not ideal for floorplanning, since the cellview 'DecosSuma' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+13 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1330.855 ; gain = 412.430 ; free physical = 126 ; free virtual = 6016
+report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1362.871 ; gain = 0.000 ; free physical = 128 ; free virtual = 6017
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 19 19:39:47 2016...

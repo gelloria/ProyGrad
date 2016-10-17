@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/Verilog/Deco_Sum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Deco_Sum
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/Verilog/DecosSuma.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DecosSuma
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/Verilog/tb_DecosSuma.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DecosSuma
+WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [/home/gabriel/PG/Verilog/tb_DecosSuma.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/FiltroPB/FiltroPB.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

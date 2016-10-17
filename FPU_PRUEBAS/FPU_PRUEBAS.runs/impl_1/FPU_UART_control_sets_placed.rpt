@@ -1,0 +1,71 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Thu Sep 22 13:21:27 2016
+| Host         : gabriel-Inspiron-5558 running 64-bit Ubuntu 16.04.1 LTS
+| Command      : report_control_sets -verbose -file FPU_UART_control_sets_placed.rpt
+| Design       : FPU_UART
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    18 |
+| Minimum Number of register sites lost to control set restrictions |    59 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               1 |            1 |
+| No           | No                    | Yes                    |              52 |           22 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             304 |          144 |
+| Yes          | Yes                   | No                     |               8 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------------------------------+--------------------------------------+------------------+----------------+
+|  Clock Signal  |                          Enable Signal                         |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++----------------+----------------------------------------------------------------+--------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                                                                |                                      |                1 |              1 |
+|  clk_IBUF_BUFG | Add_Subt_uart/FS_Module/Q_reg[0]_2[0]                          | Add_Subt_uart/FS_Module/Q_reg[31][1] |                1 |              2 |
+|  clk_IBUF_BUFG |                                                                | Add_Subt_uart/FS_Module/Q_reg[31][0] |                2 |              4 |
+|  clk_IBUF_BUFG | Add_Subt_uart/FS_Module/FSM_sequential_state_reg[3]_i_1__0_n_0 | rst_IBUF                             |                2 |              4 |
+|  clk_IBUF_BUFG | uart_mod/ITRANSMISOR/TXTrasmisor/s_reg[3]_i_1_n_0              | rst_IBUF                             |                1 |              4 |
+|  clk_IBUF_BUFG | Add_Subt_uart/FS_Module/E[0]                                   | Add_Subt_uart/FS_Module/Q_reg[31][0] |                3 |              5 |
+|  clk_IBUF_BUFG | fsm_test_uart/E[0]                                             | rst_IBUF                             |                2 |              8 |
+|  clk_IBUF_BUFG | uart_mod/ITRANSMISOR/TXTrasmisor/b_reg[7]_i_1_n_0              | rst_IBUF                             |                2 |              8 |
+|  clk_IBUF_BUFG | Add_Subt_uart/FS_Module/Q_reg[0]_3[0]                          | Add_Subt_uart/FS_Module/Q_reg[31][0] |                3 |              9 |
+|  clk_IBUF_BUFG | Add_Subt_uart/FS_Module/Q_reg[0]_5[0]                          | Add_Subt_uart/FS_Module/Q_reg[31][1] |                7 |             20 |
+|  clk_IBUF_BUFG |                                                                | rst_IBUF                             |               10 |             22 |
+|  clk_IBUF_BUFG | Add_Subt_uart/FS_Module/Q_reg[0]_2[0]                          | Add_Subt_uart/FS_Module/Q_reg[31][0] |               10 |             24 |
+|  clk_IBUF_BUFG |                                                                | Add_Subt_uart/FS_Module/Q_reg[31][1] |               10 |             26 |
+|  clk_IBUF_BUFG | Add_Subt_uart/FS_Module/Q_reg[0]_1[0]                          | Add_Subt_uart/FS_Module/Q_reg[31][0] |                8 |             27 |
+|  clk_IBUF_BUFG | Add_Subt_uart/FS_Module/Q_reg[0]_0[0]                          | Add_Subt_uart/FS_Module/AR[0]        |                5 |             32 |
+|  clk_IBUF_BUFG | Add_Subt_uart/FS_Module/Q_reg[0]_5[0]                          | Add_Subt_uart/FS_Module/Q_reg[31][0] |               13 |             39 |
+|  clk_IBUF_BUFG | Add_Subt_uart/FS_Module/Q_reg[0]_4[0]                          | Add_Subt_uart/FS_Module/Q_reg[31][1] |               41 |             60 |
+|  clk_IBUF_BUFG | fsm_test_uart/enab_address                                     | rst_IBUF                             |               48 |             70 |
++----------------+----------------------------------------------------------------+--------------------------------------+------------------+----------------+
+
+

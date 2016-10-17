@@ -1,0 +1,355 @@
+
+*** Running vivado
+    with args -log DecosSuma.vds -m64 -mode batch -messageDb vivado.pb -notrace -source DecosSuma.tcl
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source DecosSuma.tcl -notrace
+Command: synth_design -top DecosSuma -part xc7a100tcsg324-1 -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11485 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1033.816 ; gain = 186.723 ; free physical = 709 ; free virtual = 8892
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DecosSuma' [/home/gabriel/PG/Verilog/DecosSuma.v:23]
+	Parameter SAMPLES bound to: 128 - type: integer 
+	Parameter OSF bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Deco_Sum' [/home/gabriel/PG/Verilog/Deco_Sum.v:23]
+INFO: [Synth 8-226] default block is never used [/home/gabriel/PG/Verilog/Deco_Sum.v:29]
+INFO: [Synth 8-256] done synthesizing module 'Deco_Sum' (1#1) [/home/gabriel/PG/Verilog/Deco_Sum.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DecosSuma' (2#1) [/home/gabriel/PG/Verilog/DecosSuma.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1073.191 ; gain = 226.098 ; free physical = 669 ; free virtual = 8852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1073.191 ; gain = 226.098 ; free physical = 669 ; free virtual = 8852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1081.195 ; gain = 234.102 ; free physical = 669 ; free virtual = 8852
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1097.211 ; gain = 250.117 ; free physical = 653 ; free virtual = 8836
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1168.227 ; gain = 321.133 ; free physical = 586 ; free virtual = 8769
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1211.273 ; gain = 364.180 ; free physical = 543 ; free virtual = 8726
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1211.273 ; gain = 364.180 ; free physical = 543 ; free virtual = 8726
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|Deco_Sum    | rom        | 256x4         | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1220.281 ; gain = 373.188 ; free physical = 535 ; free virtual = 8718
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1220.281 ; gain = 373.188 ; free physical = 535 ; free virtual = 8718
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1220.281 ; gain = 373.188 ; free physical = 535 ; free virtual = 8718
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1221.289 ; gain = 374.195 ; free physical = 534 ; free virtual = 8717
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1221.289 ; gain = 374.195 ; free physical = 534 ; free virtual = 8717
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1221.289 ; gain = 374.195 ; free physical = 534 ; free virtual = 8717
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1221.289 ; gain = 374.195 ; free physical = 534 ; free virtual = 8717
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1221.289 ; gain = 374.195 ; free physical = 534 ; free virtual = 8717
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1221.289 ; gain = 374.195 ; free physical = 534 ; free virtual = 8717
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT4 |   256|
+|2     |LUT5 |   512|
+|3     |LUT6 |   768|
+|4     |IBUF |  1024|
+|5     |OBUF |   512|
++------+-----+------+
+
+Report Instance Areas: 
++------+-----------------------------+--------------+------+
+|      |Instance                     |Module        |Cells |
++------+-----------------------------+--------------+------+
+|1     |top                          |              |  3072|
+|2     |  \registers[0].FiltroPB     |Deco_Sum__1   |    12|
+|3     |  \registers[8].FiltroPB     |Deco_Sum__2   |    12|
+|4     |  \registers[16].FiltroPB    |Deco_Sum__3   |    12|
+|5     |  \registers[24].FiltroPB    |Deco_Sum__4   |    12|
+|6     |  \registers[32].FiltroPB    |Deco_Sum__5   |    12|
+|7     |  \registers[40].FiltroPB    |Deco_Sum__6   |    12|
+|8     |  \registers[48].FiltroPB    |Deco_Sum__7   |    12|
+|9     |  \registers[56].FiltroPB    |Deco_Sum__8   |    12|
+|10    |  \registers[64].FiltroPB    |Deco_Sum__9   |    12|
+|11    |  \registers[72].FiltroPB    |Deco_Sum__10  |    12|
+|12    |  \registers[80].FiltroPB    |Deco_Sum__11  |    12|
+|13    |  \registers[88].FiltroPB    |Deco_Sum__12  |    12|
+|14    |  \registers[96].FiltroPB    |Deco_Sum__13  |    12|
+|15    |  \registers[104].FiltroPB   |Deco_Sum__14  |    12|
+|16    |  \registers[112].FiltroPB   |Deco_Sum__15  |    12|
+|17    |  \registers[120].FiltroPB   |Deco_Sum__16  |    12|
+|18    |  \registers[128].FiltroPB   |Deco_Sum__17  |    12|
+|19    |  \registers[136].FiltroPB   |Deco_Sum__18  |    12|
+|20    |  \registers[144].FiltroPB   |Deco_Sum__19  |    12|
+|21    |  \registers[152].FiltroPB   |Deco_Sum__20  |    12|
+|22    |  \registers[160].FiltroPB   |Deco_Sum__21  |    12|
+|23    |  \registers[168].FiltroPB   |Deco_Sum__22  |    12|
+|24    |  \registers[176].FiltroPB   |Deco_Sum__23  |    12|
+|25    |  \registers[184].FiltroPB   |Deco_Sum__24  |    12|
+|26    |  \registers[192].FiltroPB   |Deco_Sum__25  |    12|
+|27    |  \registers[200].FiltroPB   |Deco_Sum__26  |    12|
+|28    |  \registers[208].FiltroPB   |Deco_Sum__27  |    12|
+|29    |  \registers[216].FiltroPB   |Deco_Sum__28  |    12|
+|30    |  \registers[224].FiltroPB   |Deco_Sum__29  |    12|
+|31    |  \registers[232].FiltroPB   |Deco_Sum__30  |    12|
+|32    |  \registers[240].FiltroPB   |Deco_Sum__31  |    12|
+|33    |  \registers[248].FiltroPB   |Deco_Sum__32  |    12|
+|34    |  \registers[256].FiltroPB   |Deco_Sum__33  |    12|
+|35    |  \registers[264].FiltroPB   |Deco_Sum__34  |    12|
+|36    |  \registers[272].FiltroPB   |Deco_Sum__35  |    12|
+|37    |  \registers[280].FiltroPB   |Deco_Sum__36  |    12|
+|38    |  \registers[288].FiltroPB   |Deco_Sum__37  |    12|
+|39    |  \registers[296].FiltroPB   |Deco_Sum__38  |    12|
+|40    |  \registers[304].FiltroPB   |Deco_Sum__39  |    12|
+|41    |  \registers[312].FiltroPB   |Deco_Sum__40  |    12|
+|42    |  \registers[320].FiltroPB   |Deco_Sum__41  |    12|
+|43    |  \registers[328].FiltroPB   |Deco_Sum__42  |    12|
+|44    |  \registers[336].FiltroPB   |Deco_Sum__43  |    12|
+|45    |  \registers[344].FiltroPB   |Deco_Sum__44  |    12|
+|46    |  \registers[352].FiltroPB   |Deco_Sum__45  |    12|
+|47    |  \registers[360].FiltroPB   |Deco_Sum__46  |    12|
+|48    |  \registers[368].FiltroPB   |Deco_Sum__47  |    12|
+|49    |  \registers[376].FiltroPB   |Deco_Sum__48  |    12|
+|50    |  \registers[384].FiltroPB   |Deco_Sum__49  |    12|
+|51    |  \registers[392].FiltroPB   |Deco_Sum__50  |    12|
+|52    |  \registers[400].FiltroPB   |Deco_Sum__51  |    12|
+|53    |  \registers[408].FiltroPB   |Deco_Sum__52  |    12|
+|54    |  \registers[416].FiltroPB   |Deco_Sum__53  |    12|
+|55    |  \registers[424].FiltroPB   |Deco_Sum__54  |    12|
+|56    |  \registers[432].FiltroPB   |Deco_Sum__55  |    12|
+|57    |  \registers[440].FiltroPB   |Deco_Sum__56  |    12|
+|58    |  \registers[448].FiltroPB   |Deco_Sum__57  |    12|
+|59    |  \registers[456].FiltroPB   |Deco_Sum__58  |    12|
+|60    |  \registers[464].FiltroPB   |Deco_Sum__59  |    12|
+|61    |  \registers[472].FiltroPB   |Deco_Sum__60  |    12|
+|62    |  \registers[480].FiltroPB   |Deco_Sum__61  |    12|
+|63    |  \registers[488].FiltroPB   |Deco_Sum__62  |    12|
+|64    |  \registers[496].FiltroPB   |Deco_Sum__63  |    12|
+|65    |  \registers[504].FiltroPB   |Deco_Sum__64  |    12|
+|66    |  \registers[512].FiltroPB   |Deco_Sum__65  |    12|
+|67    |  \registers[520].FiltroPB   |Deco_Sum__66  |    12|
+|68    |  \registers[528].FiltroPB   |Deco_Sum__67  |    12|
+|69    |  \registers[536].FiltroPB   |Deco_Sum__68  |    12|
+|70    |  \registers[544].FiltroPB   |Deco_Sum__69  |    12|
+|71    |  \registers[552].FiltroPB   |Deco_Sum__70  |    12|
+|72    |  \registers[560].FiltroPB   |Deco_Sum__71  |    12|
+|73    |  \registers[568].FiltroPB   |Deco_Sum__72  |    12|
+|74    |  \registers[576].FiltroPB   |Deco_Sum__73  |    12|
+|75    |  \registers[584].FiltroPB   |Deco_Sum__74  |    12|
+|76    |  \registers[592].FiltroPB   |Deco_Sum__75  |    12|
+|77    |  \registers[600].FiltroPB   |Deco_Sum__76  |    12|
+|78    |  \registers[608].FiltroPB   |Deco_Sum__77  |    12|
+|79    |  \registers[616].FiltroPB   |Deco_Sum__78  |    12|
+|80    |  \registers[624].FiltroPB   |Deco_Sum__79  |    12|
+|81    |  \registers[632].FiltroPB   |Deco_Sum__80  |    12|
+|82    |  \registers[640].FiltroPB   |Deco_Sum__81  |    12|
+|83    |  \registers[648].FiltroPB   |Deco_Sum__82  |    12|
+|84    |  \registers[656].FiltroPB   |Deco_Sum__83  |    12|
+|85    |  \registers[664].FiltroPB   |Deco_Sum__84  |    12|
+|86    |  \registers[672].FiltroPB   |Deco_Sum__85  |    12|
+|87    |  \registers[680].FiltroPB   |Deco_Sum__86  |    12|
+|88    |  \registers[688].FiltroPB   |Deco_Sum__87  |    12|
+|89    |  \registers[696].FiltroPB   |Deco_Sum__88  |    12|
+|90    |  \registers[704].FiltroPB   |Deco_Sum__89  |    12|
+|91    |  \registers[712].FiltroPB   |Deco_Sum__90  |    12|
+|92    |  \registers[720].FiltroPB   |Deco_Sum__91  |    12|
+|93    |  \registers[728].FiltroPB   |Deco_Sum__92  |    12|
+|94    |  \registers[736].FiltroPB   |Deco_Sum__93  |    12|
+|95    |  \registers[744].FiltroPB   |Deco_Sum__94  |    12|
+|96    |  \registers[752].FiltroPB   |Deco_Sum__95  |    12|
+|97    |  \registers[760].FiltroPB   |Deco_Sum__96  |    12|
+|98    |  \registers[768].FiltroPB   |Deco_Sum__97  |    12|
+|99    |  \registers[776].FiltroPB   |Deco_Sum__98  |    12|
+|100   |  \registers[784].FiltroPB   |Deco_Sum__99  |    12|
+|101   |  \registers[792].FiltroPB   |Deco_Sum__100 |    12|
+|102   |  \registers[800].FiltroPB   |Deco_Sum__101 |    12|
+|103   |  \registers[808].FiltroPB   |Deco_Sum__102 |    12|
+|104   |  \registers[816].FiltroPB   |Deco_Sum__103 |    12|
+|105   |  \registers[824].FiltroPB   |Deco_Sum__104 |    12|
+|106   |  \registers[832].FiltroPB   |Deco_Sum__105 |    12|
+|107   |  \registers[840].FiltroPB   |Deco_Sum__106 |    12|
+|108   |  \registers[848].FiltroPB   |Deco_Sum__107 |    12|
+|109   |  \registers[856].FiltroPB   |Deco_Sum__108 |    12|
+|110   |  \registers[864].FiltroPB   |Deco_Sum__109 |    12|
+|111   |  \registers[872].FiltroPB   |Deco_Sum__110 |    12|
+|112   |  \registers[880].FiltroPB   |Deco_Sum__111 |    12|
+|113   |  \registers[888].FiltroPB   |Deco_Sum__112 |    12|
+|114   |  \registers[896].FiltroPB   |Deco_Sum__113 |    12|
+|115   |  \registers[904].FiltroPB   |Deco_Sum__114 |    12|
+|116   |  \registers[912].FiltroPB   |Deco_Sum__115 |    12|
+|117   |  \registers[920].FiltroPB   |Deco_Sum__116 |    12|
+|118   |  \registers[928].FiltroPB   |Deco_Sum__117 |    12|
+|119   |  \registers[936].FiltroPB   |Deco_Sum__118 |    12|
+|120   |  \registers[944].FiltroPB   |Deco_Sum__119 |    12|
+|121   |  \registers[952].FiltroPB   |Deco_Sum__120 |    12|
+|122   |  \registers[960].FiltroPB   |Deco_Sum__121 |    12|
+|123   |  \registers[968].FiltroPB   |Deco_Sum__122 |    12|
+|124   |  \registers[976].FiltroPB   |Deco_Sum__123 |    12|
+|125   |  \registers[984].FiltroPB   |Deco_Sum__124 |    12|
+|126   |  \registers[992].FiltroPB   |Deco_Sum__125 |    12|
+|127   |  \registers[1000].FiltroPB  |Deco_Sum__126 |    12|
+|128   |  \registers[1008].FiltroPB  |Deco_Sum__127 |    12|
+|129   |  \registers[1016].FiltroPB  |Deco_Sum      |    12|
++------+-----------------------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1221.289 ; gain = 374.195 ; free physical = 534 ; free virtual = 8717
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1221.289 ; gain = 248.473 ; free physical = 533 ; free virtual = 8716
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1221.289 ; gain = 374.195 ; free physical = 533 ; free virtual = 8716
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1024 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+14 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1308.301 ; gain = 389.875 ; free physical = 471 ; free virtual = 8653
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1340.316 ; gain = 0.000 ; free physical = 468 ; free virtual = 8651
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 21 13:27:03 2016...

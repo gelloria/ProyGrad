@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Sep 27 15:28:53 2016
+# Process ID: 8478
+# Current directory: /home/gabriel/PG/MovingAverage/MovingAverage.runs/synth_1
+# Command line: vivado -log movingAverage.vds -mode batch -messageDb vivado.pb -notrace -source movingAverage.tcl
+# Log file: /home/gabriel/PG/MovingAverage/MovingAverage.runs/synth_1/movingAverage.vds
+# Journal file: /home/gabriel/PG/MovingAverage/MovingAverage.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source movingAverage.tcl -notrace

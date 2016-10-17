@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Oct 17 17:00:52 2016
+# Process ID: 13959
+# Current directory: /home/gabriel/PG/AlgoritmoCorrelacion/AlgoritmoCorrelacion.runs/synth_1
+# Command line: vivado -log movingAverage.vds -mode batch -messageDb vivado.pb -notrace -source movingAverage.tcl
+# Log file: /home/gabriel/PG/AlgoritmoCorrelacion/AlgoritmoCorrelacion.runs/synth_1/movingAverage.vds
+# Journal file: /home/gabriel/PG/AlgoritmoCorrelacion/AlgoritmoCorrelacion.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source movingAverage.tcl -notrace
+Command: synth_design -top movingAverage -part xc7a100tcsg324-1 -flatten_hierarchy full
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13972 
+WARNING: [Synth 8-2507] parameter declaration becomes local in movingAverage with formal parameter declaration list [/home/gabriel/PG/MovingAverage/MovingAverage.srcs/sources_1/new/movingAverage.v:29]
+ERROR: [Synth 8-2576] procedural assignment to a non-register i is not permitted [/home/gabriel/PG/MovingAverage/MovingAverage.srcs/sources_1/new/movingAverage.v:52]
+ERROR: [Synth 8-2576] procedural assignment to a non-register i is not permitted [/home/gabriel/PG/MovingAverage/MovingAverage.srcs/sources_1/new/movingAverage.v:52]
+INFO: [Synth 8-2350] module movingAverage ignored due to previous errors [/home/gabriel/PG/MovingAverage/MovingAverage.srcs/sources_1/new/movingAverage.v:23]
+Failed to read verilog '/home/gabriel/PG/MovingAverage/MovingAverage.srcs/sources_1/new/movingAverage.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 1 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 17 17:01:13 2016...
