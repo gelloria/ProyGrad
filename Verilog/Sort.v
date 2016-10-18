@@ -22,8 +22,7 @@
 module Sort # (parameter SAMPLES=2, parameter OSF=8) (P,DataIn,DataOut);
 	input wire P;//P=1 > precarga, P=0 > sortingex
     input wire [SAMPLES*OSF-1:0] DataIn;
-    output reg[SAMPLES*OSF-1:0] DataOut;
-
+    output reg [SAMPLES*OSF-1:0] DataOut;
 
 	wire [SAMPLES*OSF-1:0] R;
 	wire [SAMPLES*OSF-1:0] S;
@@ -42,7 +41,7 @@ module Sort # (parameter SAMPLES=2, parameter OSF=8) (P,DataIn,DataOut);
 
 // comienza instanciacion de muxes
 	mux2_1 mux_s(S[0],DataIn[0],salAnd[0],P);//q,i1,i0,sel
-	mux2_1 mux_r(R[0],!DataIn[0],0,P);//q,i1,i0,sel
+	mux2_1 mux_r(R[0],!DataIn[0],1'b0,P);//q,i1,i0,sel
 
     genvar k;//instancia k muxes
     generate for(k=1; k<(SAMPLES*OSF-1); k=k+1)
@@ -52,7 +51,7 @@ module Sort # (parameter SAMPLES=2, parameter OSF=8) (P,DataIn,DataOut);
        end
     endgenerate
 
-    mux2_1 mux_su(S[SAMPLES*OSF-1],DataIn[SAMPLES*OSF-1],0,P);//q,i1,i0,sel
+    mux2_1 mux_su(S[SAMPLES*OSF-1],DataIn[SAMPLES*OSF-1],1'b0,P);//q,i1,i0,sel
 	mux2_1 mux_ru(R[SAMPLES*OSF-1],!DataIn[SAMPLES*OSF-1],salAnd[SAMPLES*OSF-2],P);//q,i1,i0,sel
 //termina instanciacion de muxes
 
@@ -66,14 +65,15 @@ module Sort # (parameter SAMPLES=2, parameter OSF=8) (P,DataIn,DataOut);
 
 	always @(*)
 	begin//precarga
-		if (P)
+		if (!P)
 			begin
-			DataOut=0;
+			DataOut = Q[SAMPLES*OSF-1:0];
 			end
-		else 
-			begin
-			 DataOut=Q[SAMPLES*OSF-1:0];
-			end	 
+		// else 
+		// 	begin
+		// 	 DataOut=Q[SAMPLES*OSF-1:0];
+		// 	end	 
 	end
+
 
 endmodule

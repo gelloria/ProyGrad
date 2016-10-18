@@ -20,38 +20,46 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module movingAverage # (parameter SAMPLES=2, parameter OSF=8, parameter n=3)(Clk,Reset,DataIn,movAverage);
-    input Clk; 
-    input Reset;
+module movingAverage # (parameter SAMPLES=2, parameter OSF=8, parameter n=3)(Enable, Reset, DataIn, movAverage);
+    input wire Enable; 
+    input wire Reset;
     input wire [$clog2(SAMPLES*OSF)*n+(n-1):0] DataIn;
     output wire [$clog2(SAMPLES*OSF):0] movAverage;
-   
-    localparam H = $clog2(SAMPLES*OSF);
+    reg [$clog2(SAMPLES*OSF)+n:0] suma;
 
-    //example array
+    always @(*) begin
+    	if (Reset)
+    	begin
+    		suma  = 0;
+    	end
+    	else if (Enable)
+    	begin
+    		suma  = DataIn[14:10]+DataIn[9:5]+DataIn[4:0];	
+    	end
+    end
 
-	reg [H:0] array [0:n]; = {1,2,3};
-
-	//###############################################
-	
-	wire [7:0] summation_steps [n-2 : 0];//container for all sumation steps
-
-	genvar i;
-	generate
-	    assign summation_steps[0] = array[0] + array[1];//for less cost starts witch first sum (not array[0])
-
-	    for(i=0; i<n-2; i=i+1) begin
-	        assign summation_steps[i+1] = summation_steps[i] + array[i+2];
-	    end
-	endgenerate
-	wire [7:0] result;
-	assign result = summation_steps[cells-2];
-
-
-
-
-	
-	assign movAverage  = sum;
+	assign  movAverage = suma [$clog2(SAMPLES*OSF)+n:n-1];
 	
 
 endmodule
+
+
+ //    always @*
+ //    begin
+
+	// 	if (Reset)
+	// 		begin
+	// 			sum=0;
+	// 		end
+	// 	else 
+	// 		begin
+
+	// 		//sum = DataIn[4:0]+DataIn[9:5];
+	// 			for(i=0; i<n+1; i=i+(H+1))
+	// 			begin
+	// 				sum = sum + array[i];
+	// 			end
+	// 		end 
+
+	    
+	// end

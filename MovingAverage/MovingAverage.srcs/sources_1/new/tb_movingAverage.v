@@ -2,51 +2,43 @@
 `timescale 1ns/1ps
 
 module tb_movingAverage (); /* this is automatically generated */
-	reg Clk;
-
-	// clock
-	initial begin
-		Clk = 0;
-		forever #5 Clk = ~Clk;
-	end
 
 	parameter SAMPLES = 2;
 	parameter OSF     = 8;
-	parameter n       = 2;
+	parameter n       = 3;
 
-	reg                         Reset;
-	reg [$clog2(SAMPLES*OSF):0] Value;
-	wire [$clog2(SAMPLES*OSF):0] Output;
+	reg                                 Enable;
+	reg                                 Reset;
+	reg [$clog2(SAMPLES*OSF)*n+(n-1):0] DataIn;
+	wire         [$clog2(SAMPLES*OSF):0] movAverage;
 
-	movingAverage #(
-			.SAMPLES(SAMPLES),
-			.OSF(OSF),
-			.n(n)
-		) inst_movingAverage (
-			.Clk    (Clk),
-			.Reset  (Reset),
-			.Value  (Value),
-			.Output (Output)
+	movingAverage #(.SAMPLES(SAMPLES), .OSF(OSF), .n(n)) inst_movingAverage
+	 (
+			.Enable     (Enable),
+			.Reset      (Reset),
+			.DataIn     (DataIn),
+			.movAverage (movAverage)
 		);
-
 	initial begin
 		// do something
-		Value=0;
+		DataIn=15'b000000000000000;
+		Enable=0;
 		Reset=1;
 		#10
+		DataIn=15'b000000000100001;
+		Enable=1;
 		Reset=0;
-		Value=3;
 		#10
-		Value=6;
+		DataIn=15'b000000010000100;
+		//Enable=0;
 		#10
-		Value=8;
+		Enable=1;
 		#10
-		Value=10;
+		DataIn=15'b100000000100001;
 		#10
-		Value=12;
-		#10
-		repeat(10)@(posedge Clk);
+
 		$finish;
 	end
+
 
 endmodule

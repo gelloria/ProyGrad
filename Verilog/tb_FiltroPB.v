@@ -20,7 +20,7 @@ module tb_FiltroPB (); /* this is automatically generated */
 		P=0;
 
 		#30
-		DataIn=31;
+		DataIn=7;
 		P=1;
 		#30
 		P=0;

@@ -9,4 +9,4 @@ then
 exit $RETVAL
 fi
 }
-ExecStep $xv_path/bin/xsim tb_shiftRegister_behav -key {Behavioral:sim_1:Functional:tb_shiftRegister} -tclbatch tb_shiftRegister.tcl -view /home/gabriel/PG/AlgoritmoCorrelacion/tb_shiftRegister_behav1.wcfg -log simulate.log
+ExecStep $xv_path/bin/xsim tb_movingAverage_behav -key {Behavioral:sim_1:Functional:tb_movingAverage} -tclbatch tb_movingAverage.tcl -log simulate.log

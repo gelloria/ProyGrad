@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/Verilog/Comparador.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparador
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/Verilog/tb_Comparador.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Comparador
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/AlgoritmoCorrelacion/AlgoritmoCorrelacion.sim/sim_2/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

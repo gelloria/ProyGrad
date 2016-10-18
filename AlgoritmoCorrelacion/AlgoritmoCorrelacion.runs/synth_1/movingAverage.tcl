@@ -4,6 +4,8 @@
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
+set_msg_config  -ruleid {3}  -id {VRFC 10-278}  -string {{WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port i0 [/home/gabriel/PG/Verilog/Sort.v:45]}}  -suppress 
+set_msg_config  -ruleid {4}  -id {VRFC 10-278}  -suppress 
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.compositeFile.enableAutoGeneration 0

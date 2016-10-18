@@ -32,8 +32,10 @@ module Sumatoria # (parameter SAMPLES=2, parameter OSF=8) (Input,Output);
        end
     endgenerate
 
-	always @(Input or suma) begin
-		Output=suma[3:0]+suma[7:4];
+	always @(*) begin
+		if (Enable) begin
+			Output=suma[3:0]+suma[7:4];
+		end		
 	end
 
 endmodule
