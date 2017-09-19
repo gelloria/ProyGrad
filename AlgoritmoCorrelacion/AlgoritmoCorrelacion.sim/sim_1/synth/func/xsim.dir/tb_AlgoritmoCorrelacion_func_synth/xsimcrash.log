@@ -1,0 +1,13 @@
+Printing stacktrace...
+
+[0] /lib/x86_64-linux-gnu/libc.so.6(+0x172285) [0x7f15fe742285]
+[1] /opt/Xilinx/Vivado/2015.4/lib/lnx64.o/librdi_simulator_kernel.so(iki_calloca8+0x1c) [0x7f15fed1c3ec]
+[2] /opt/Xilinx/Vivado/2015.4/lib/lnx64.o/librdi_simulator_kernel.so(iki_vlog_signal_handle_value_input+0x33) [0x7f15fed05263]
+[3] xsim.dir/tb_AlgoritmoCorrelacion_func_synth/xsimk() [0x40877f]
+[4] /opt/Xilinx/Vivado/2015.4/lib/lnx64.o/librdi_simulator_kernel.so(ISIMK::Kernel::callProcessExecuteFunctions()+0x9e) [0x7f15fed189be]
+[5] /opt/Xilinx/Vivado/2015.4/lib/lnx64.o/librdi_simulator_kernel.so(ISIMK::ListQ::processTimeSlots()+0x85) [0x7f15fed1a335]
+[6] /opt/Xilinx/Vivado/2015.4/lib/lnx64.o/librdi_simulator_kernel.so(ISIMK::GDBMIHost::runSimulationLoop()+0xa9) [0x7f15fed13fd9]
+[7] /opt/Xilinx/Vivado/2015.4/lib/lnx64.o/libboost_thread.so(+0x10b6a) [0x7f15fdcc2b6a]
+[8] /lib/x86_64-linux-gnu/libpthread.so.0(+0x76fa) [0x7f15fcbd76fa]
+[9] /lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f15fe6d6b5d]
+Done

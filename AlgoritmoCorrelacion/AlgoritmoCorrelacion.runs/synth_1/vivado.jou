@@ -2,11 +2,11 @@
 # Vivado v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Mon Oct 17 23:50:21 2016
-# Process ID: 11396
+# Start of session at: Sat Oct 29 14:56:21 2016
+# Process ID: 13410
 # Current directory: /home/gabriel/PG/AlgoritmoCorrelacion/AlgoritmoCorrelacion.runs/synth_1
-# Command line: vivado -log movingAverage.vds -mode batch -messageDb vivado.pb -notrace -source movingAverage.tcl
-# Log file: /home/gabriel/PG/AlgoritmoCorrelacion/AlgoritmoCorrelacion.runs/synth_1/movingAverage.vds
+# Command line: vivado -log AlgoritmoCorrelacion.vds -mode batch -messageDb vivado.pb -notrace -source AlgoritmoCorrelacion.tcl
+# Log file: /home/gabriel/PG/AlgoritmoCorrelacion/AlgoritmoCorrelacion.runs/synth_1/AlgoritmoCorrelacion.vds
 # Journal file: /home/gabriel/PG/AlgoritmoCorrelacion/AlgoritmoCorrelacion.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
-source movingAverage.tcl -notrace
+source AlgoritmoCorrelacion.tcl -notrace

@@ -20,20 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Suma (
-    input wire [2+SIZE:0] Input1,
-    input wire [2+SIZE:0] Input2,
-    output reg[3+SIZE:0] Output
-    );
-    
+module Suma # (parameter SAMPLES=128, parameter OSF=8, parameter SIZE) (Input1,Input2,Output);
+    input wire [$clog2(SAMPLES*OSF)+SIZE:0] Input1;
+    input wire [$clog2(SAMPLES*OSF)+SIZE:0] Input2;
+    output reg [$clog2(SAMPLES*OSF)+SIZE+1:0] Output;
     
     always@(*) begin
-
         Output=Input1+Input2;
-
     end
-    
-    
-    
-    
+
 endmodule

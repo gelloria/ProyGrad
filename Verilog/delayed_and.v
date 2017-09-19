@@ -26,7 +26,7 @@ input wire A;
 input wire B;
 output wire S;
 
-and #(1) a1(S,A,B);
+//and a1(S,A,B);
 // wire N;
 // wire M;
 
@@ -34,8 +34,8 @@ and #(1) a1(S,A,B);
 // not(M,N);
 // not(S,M);
 
-// assign M = (A && B);
-// assign N = !M;
-// assign S = !N;
+assign M = (A && B);
+assign N = !M;
+assign S = !N;
 
 endmodule

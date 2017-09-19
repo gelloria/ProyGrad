@@ -1,0 +1,7 @@
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+Time: 10 ns  Iteration: 0  Process: /tb_AlgoritmoCorrelacion/inst_AlgoritmoCorrelacion/DataOut_OBUF_inst_i_4/Forked47_216
+  File: /opt/Xilinx/Vivado/2015.4/data/verilog/src/unisims/LUT6.v
+
+HDL Line: /opt/Xilinx/Vivado/2015.4/data/verilog/src/unisims/LUT4.v:53

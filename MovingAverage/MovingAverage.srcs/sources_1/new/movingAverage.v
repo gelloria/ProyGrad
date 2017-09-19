@@ -20,25 +20,29 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module movingAverage # (parameter SAMPLES=2, parameter OSF=8, parameter n=3)(Enable, Reset, DataIn, movAverage);
-    input wire Enable; 
+module movingAverage # (parameter SAMPLES=128, parameter OSF=8, parameter n=4)(/*Enable, */Reset, DataIn, movAverage);
+    //input wire Enable; 
     input wire Reset;
     input wire [$clog2(SAMPLES*OSF)*n+(n-1):0] DataIn;
     output wire [$clog2(SAMPLES*OSF):0] movAverage;
-    reg [$clog2(SAMPLES*OSF)+n:0] suma;
+    reg [$clog2(SAMPLES*OSF)*n+(n-1):0] suma;
 
     always @(*) begin
+    	// if (Reset)
+    	// begin
+    	// 	movAverage  = 0;
+    	// end
+    	/*else*/
     	if (Reset)
     	begin
-    		suma  = 0;
+    		suma=0;
     	end
-    	else if (Enable)
-    	begin
-    		suma  = DataIn[14:10]+DataIn[9:5]+DataIn[4:0];	
+    	else begin
+    		suma = DataIn[43:33]+DataIn[32:22]+DataIn[21:11]+DataIn[10:0];
     	end
     end
 
-	assign  movAverage = suma [$clog2(SAMPLES*OSF)+n:n-1];
+	assign  movAverage = 2*suma [$clog2(SAMPLES*OSF)*n+(n-1):n-2];
 	
 
 endmodule

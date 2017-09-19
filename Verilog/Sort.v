@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module Sort # (parameter SAMPLES=2, parameter OSF=8) (P,DataIn,DataOut);
+module Sort # (parameter SAMPLES=128, parameter OSF=8) (P,DataIn,DataOut);
 	input wire P;//P=1 > precarga, P=0 > sortingex
     input wire [SAMPLES*OSF-1:0] DataIn;
     output reg [SAMPLES*OSF-1:0] DataOut;
@@ -30,6 +30,8 @@ module Sort # (parameter SAMPLES=2, parameter OSF=8) (P,DataIn,DataOut);
 	wire [SAMPLES*OSF-1:0] Qbar;
 
 	wire salAnd[SAMPLES*OSF-2:0];
+
+	//reg [SAMPLES*OSF-1:0] D;
 
 	genvar j;
     generate for(j=0; j<SAMPLES*OSF; j=j+1)
@@ -71,9 +73,10 @@ module Sort # (parameter SAMPLES=2, parameter OSF=8) (P,DataIn,DataOut);
 			end
 		// else 
 		// 	begin
-		// 	 DataOut=Q[SAMPLES*OSF-1:0];
+		// 	DataOut=0;
 		// 	end	 
 	end
+	//assign DataOut = D;
 
 
 endmodule

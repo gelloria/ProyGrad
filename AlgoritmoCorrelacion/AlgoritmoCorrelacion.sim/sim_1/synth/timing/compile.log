@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/AlgoritmoCorrelacion/AlgoritmoCorrelacion.sim/sim_1/synth/timing/tb_AlgoritmoCorrelacion_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AlgoritmoCorrelacion
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gabriel/PG/Verilog/tb_AlgoritmoCorrelacion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_AlgoritmoCorrelacion

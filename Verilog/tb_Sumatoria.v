@@ -6,16 +6,19 @@ module tb_Sumatoria (); /* this is automatically generated */
 	parameter SAMPLES = 2;
 	parameter OSF     = 8;
 
+	reg Enable;
 	reg       [SAMPLES*OSF-1:0] Input;
 	wire [$clog2(SAMPLES*OSF):0] Output;
 
-	Sumatoria #(.SAMPLES(SAMPLES), .OSF(OSF)) inst_Sumatoria (.Input(Input), .Output(Output));
+	Sumatoria #(.SAMPLES(SAMPLES), .OSF(OSF)) inst_Sumatoria (.Enable(Enable), .Input(Input), .Output(Output));
 
 	initial begin
 		// do something
 		Input=0;
+		Enable=0;
 
 		#10
+		Enable=1;
 		Input=16'b0000000000000001;
 		#10
 		Input=16'b0000000000000011;

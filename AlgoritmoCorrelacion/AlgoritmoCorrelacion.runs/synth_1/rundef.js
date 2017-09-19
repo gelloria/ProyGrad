@@ -27,7 +27,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log movingAverage.vds -m64 -mode batch -messageDb vivado.pb -notrace -source movingAverage.tcl" );
+         "-log AlgoritmoCorrelacion.vds -m64 -mode batch -messageDb vivado.pb -notrace -source AlgoritmoCorrelacion.tcl" );
 
 
 

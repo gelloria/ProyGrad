@@ -19,7 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module Comparador # (parameter SAMPLES=2, parameter OSF=8) (DataIn1,DataIn2,DataOut);
+module Comparador # (parameter SAMPLES=128, parameter OSF=8) (Enable,DataIn1,DataIn2,DataOut);
+	input wire Enable;	
     input wire [$clog2(SAMPLES*OSF):0] DataIn1;//actual
     input wire [$clog2(SAMPLES*OSF):0] DataIn2;//media movil
     output wire DataOut;
@@ -27,9 +28,9 @@ module Comparador # (parameter SAMPLES=2, parameter OSF=8) (DataIn1,DataIn2,Data
     reg salida;
 
 
-	always @ (DataIn1 or DataIn2)
+	always @ (*)
 	begin
-		if (DataIn1>=DataIn2) 
+		if (DataIn1>=DataIn2&&Enable) 
 		begin
 			salida=1'd1;
 		end

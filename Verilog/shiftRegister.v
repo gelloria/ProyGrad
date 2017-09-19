@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module shiftRegister # (parameter SAMPLES=2, parameter OSF=8, parameter n=3) (Clk,Reset,DataIn,DataOut);
+module shiftRegister # (parameter SAMPLES=128, parameter OSF=8, parameter n=4) (Clk,Reset,DataIn,DataOut);
 input wire Clk;
 input wire Reset;
 input wire [$clog2(SAMPLES*OSF):0] DataIn;

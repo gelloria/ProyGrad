@@ -20,11 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module RegistroCorrelacion # (parameter SAMPLES=128, parameter OSF=8)(Clk, Reset, LD, Input, Output);
-    input Clk, Reset;
-    input LD;
-    input[$clog2(SAMPLES*OSF):0] Input;
-    output reg[$clog2(SAMPLES*OSF):0] Output;
+module RegistroCorrelacion # (parameter SAMPLES=128, parameter OSF=8)(Reset, LD, Input, Output);
+    input wire Reset;
+    input wire LD;
+    input wire [$clog2(SAMPLES*OSF):0] Input;
+    output reg [$clog2(SAMPLES*OSF):0] Output;
     
     always @(posedge Clk)
         if(Reset)

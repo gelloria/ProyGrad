@@ -19,16 +19,15 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module AlgoritmoCorrelacion # (parameter SAMPLES=2, parameter OSF=8) (DataIn1,DataIn2,DataOut);
+module AlgoritmoCorrelacion # (parameter SAMPLES=128, parameter OSF=8, parameter n=4) (DataIn1,DataIn2,Reset, P, Enable, DataOut);
     input wire [SAMPLES*OSF-1:0] DataIn1;
     input wire [SAMPLES*OSF-1:0] DataIn2;
+    input wire Reset;
+    input wire P;
+    input wire Enable;
     output wire DataOut;
 
-    // parameter SAMPLES = 2;
-    // parameter OSF     = 8;
-    parameter n       = 3;
-
-    wire resultadoXnor;
+    wire [SAMPLES*OSF-1:0] resultadoXnor;
     wire [$clog2(SAMPLES*OSF):0] valorCorrelacion;
     wire [$clog2(SAMPLES*OSF)*n+(n-1):0] nValoresCorrelacion ;
     wire [$clog2(SAMPLES*OSF):0] valorMediaMovil;
@@ -37,35 +36,36 @@ module AlgoritmoCorrelacion # (parameter SAMPLES=2, parameter OSF=8) (DataIn1,Da
     Multiplicador #(.SAMPLES(SAMPLES), .OSF(OSF)) MultiplicacionXnor 
     (
       .A(DataIn1),
-      .B(DataIn1),
+      .B(DataIn2),
       .C(resultadoXnor)
     );
 
-    FiltroPB #(.SAMPLES(SAMPLES), .OSF(OSF)) FiltroContador 
+    FiltroPB #(.SAMPLES(SAMPLES),.OSF(OSF)) FiltroPasoBajas
     (
-      .P(P),
-      .DataIn(resultadoXnor),
-      .DataOut(valorCorrelacion)
+      .P       (P),
+      .Enable  (Enable),
+      .DataIn  (resultadoXnor),
+      .DataOut (valorCorrelacion)
     );
 
     shiftRegister #(.SAMPLES(SAMPLES), .OSF(OSF), .n(n)) registroCorrelacion 
     (
-      .Clk     (Clk),
+      .Clk     (P),
       .Reset   (Reset),
       .DataIn  (valorCorrelacion),
       .DataOut (nValoresCorrelacion)
     );
 
-    movingAverage #(.SAMPLES(SAMPLES), .OSF(OSF), .n(n)) calculoMediaMovil
+    movingAverage #(.SAMPLES(SAMPLES), .OSF(OSF),.n(n)) calculoMediaMovil
     (
-      .Enable     (Enable),
       .Reset      (Reset),
       .DataIn     (nValoresCorrelacion),
       .movAverage (valorMediaMovil)
     );
 
-    Comparador #(.SAMPLES(SAMPLES), .OSF(OSF)) ComparadorContraMedia
+    Comparador #(.SAMPLES(SAMPLES), .OSF(OSF)) ComparadorContraMedia 
     (
+      .Enable  (Enable),
       .DataIn1 (valorCorrelacion),
       .DataIn2 (valorMediaMovil),
       .DataOut (DataOut)

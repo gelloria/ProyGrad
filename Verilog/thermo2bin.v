@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module thermo2bin # (parameter SAMPLES=2, parameter OSF=8) (Input,Output);
+module thermo2bin # (parameter SAMPLES=128, parameter OSF=8) (Input,Output);
 	input [7:0]Input;
 	output reg[3:0]Output;
 	

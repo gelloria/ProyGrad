@@ -1,0 +1,409 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sat Oct 29 14:56:21 2016
+# Process ID: 13410
+# Current directory: /home/gabriel/PG/AlgoritmoCorrelacion/AlgoritmoCorrelacion.runs/synth_1
+# Command line: vivado -log AlgoritmoCorrelacion.vds -mode batch -messageDb vivado.pb -notrace -source AlgoritmoCorrelacion.tcl
+# Log file: /home/gabriel/PG/AlgoritmoCorrelacion/AlgoritmoCorrelacion.runs/synth_1/AlgoritmoCorrelacion.vds
+# Journal file: /home/gabriel/PG/AlgoritmoCorrelacion/AlgoritmoCorrelacion.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source AlgoritmoCorrelacion.tcl -notrace
+Command: synth_design -top AlgoritmoCorrelacion -part xc7a100tcsg324-1 -flatten_hierarchy full
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13420 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1033.812 ; gain = 186.723 ; free physical = 166 ; free virtual = 7612
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AlgoritmoCorrelacion' [/home/gabriel/PG/Verilog/AlgoritmoCorrelacion.v:22]
+	Parameter SAMPLES bound to: 128 - type: integer 
+	Parameter OSF bound to: 8 - type: integer 
+	Parameter n bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Multiplicador' [/home/gabriel/PG/Verilog/Multiplicador.v:23]
+	Parameter SAMPLES bound to: 128 - type: integer 
+	Parameter OSF bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Multiplicador' (1#1) [/home/gabriel/PG/Verilog/Multiplicador.v:23]
+INFO: [Synth 8-638] synthesizing module 'FiltroPB' [/home/gabriel/PG/Verilog/FiltroPB.v:22]
+	Parameter SAMPLES bound to: 128 - type: integer 
+	Parameter OSF bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Sort' [/home/gabriel/PG/Verilog/Sort.v:22]
+	Parameter SAMPLES bound to: 128 - type: integer 
+	Parameter OSF bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'SR_latch_gate' [/home/gabriel/PG/Verilog/SR_latch_gate.v:24]
+INFO: [Synth 8-256] done synthesizing module 'SR_latch_gate' (2#1) [/home/gabriel/PG/Verilog/SR_latch_gate.v:24]
+INFO: [Synth 8-638] synthesizing module 'mux2_1' [/home/gabriel/PG/MovingAverage/MovingAverage.srcs/sources_1/new/mux2_1.v:22]
+INFO: [Synth 8-256] done synthesizing module 'mux2_1' (3#1) [/home/gabriel/PG/MovingAverage/MovingAverage.srcs/sources_1/new/mux2_1.v:22]
+INFO: [Synth 8-638] synthesizing module 'delayed_and' [/home/gabriel/PG/Verilog/delayed_and.v:24]
+INFO: [Synth 8-256] done synthesizing module 'delayed_and' (4#1) [/home/gabriel/PG/Verilog/delayed_and.v:24]
+INFO: [Synth 8-256] done synthesizing module 'Sort' (5#1) [/home/gabriel/PG/Verilog/Sort.v:22]
+INFO: [Synth 8-638] synthesizing module 'Sumatoria' [/home/gabriel/PG/Verilog/Sumatoria.v:24]
+	Parameter SAMPLES bound to: 128 - type: integer 
+	Parameter OSF bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'thermo2bin' [/home/gabriel/PG/Verilog/thermo2bin.v:23]
+	Parameter SAMPLES bound to: 128 - type: integer 
+	Parameter OSF bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'thermo2bin' (6#1) [/home/gabriel/PG/Verilog/thermo2bin.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Sumatoria' (7#1) [/home/gabriel/PG/Verilog/Sumatoria.v:24]
+INFO: [Synth 8-256] done synthesizing module 'FiltroPB' (8#1) [/home/gabriel/PG/Verilog/FiltroPB.v:22]
+INFO: [Synth 8-638] synthesizing module 'shiftRegister' [/home/gabriel/PG/Verilog/shiftRegister.v:22]
+	Parameter SAMPLES bound to: 128 - type: integer 
+	Parameter OSF bound to: 8 - type: integer 
+	Parameter n bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shiftRegister' (9#1) [/home/gabriel/PG/Verilog/shiftRegister.v:22]
+INFO: [Synth 8-638] synthesizing module 'movingAverage' [/home/gabriel/PG/MovingAverage/MovingAverage.srcs/sources_1/new/movingAverage.v:23]
+	Parameter SAMPLES bound to: 128 - type: integer 
+	Parameter OSF bound to: 8 - type: integer 
+	Parameter n bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'movingAverage' (10#1) [/home/gabriel/PG/MovingAverage/MovingAverage.srcs/sources_1/new/movingAverage.v:23]
+INFO: [Synth 8-638] synthesizing module 'Comparador' [/home/gabriel/PG/Verilog/Comparador.v:22]
+	Parameter SAMPLES bound to: 128 - type: integer 
+	Parameter OSF bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Comparador' (11#1) [/home/gabriel/PG/Verilog/Comparador.v:22]
+INFO: [Synth 8-256] done synthesizing module 'AlgoritmoCorrelacion' (12#1) [/home/gabriel/PG/Verilog/AlgoritmoCorrelacion.v:22]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1107.188 ; gain = 260.098 ; free physical = 124 ; free virtual = 7557
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1107.188 ; gain = 260.098 ; free physical = 124 ; free virtual = 7557
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1115.191 ; gain = 268.102 ; free physical = 124 ; free virtual = 7558
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5587] ROM size for "Output" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-327] inferring latch for variable 'DataOut_reg' [/home/gabriel/PG/Verilog/Sort.v:72]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1215.230 ; gain = 368.141 ; free physical = 117 ; free virtual = 7493
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     14 Bit       Adders := 1     
+	 128 Input     11 Bit       Adders := 1     
++---XORs : 
+	   2 Input   1024 Bit         XORs := 1     
++---Registers : 
+	               44 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 256   
+	   2 Input      1 Bit        Muxes := 2048  
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Multiplicador 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input   1024 Bit         XORs := 1     
+Module mux2_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module thermo2bin 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input      4 Bit        Muxes := 2     
+Module Sumatoria 
+Detailed RTL Component Info : 
++---Adders : 
+	 128 Input     11 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+Module shiftRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	               44 Bit    Registers := 1     
+Module movingAverage 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     14 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 1215.238 ; gain = 368.148 ; free physical = 115 ; free virtual = 7492
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5587] ROM size for "t2bs[0].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[8].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[16].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[24].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[32].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[40].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[48].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[56].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[64].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[72].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[80].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[88].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[96].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[104].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[112].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[120].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[128].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[136].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[144].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[152].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[160].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[168].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[176].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[184].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[192].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[200].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[208].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[216].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[224].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[232].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[240].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[248].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[256].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[264].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[272].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[280].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[288].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[296].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[304].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[312].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[320].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[328].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[336].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[344].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[352].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[360].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[368].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[376].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[384].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[392].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[400].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[408].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[416].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[424].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[432].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[440].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[448].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[456].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[464].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[472].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[480].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[488].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[496].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[504].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[512].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[520].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[528].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[536].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[544].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[552].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[560].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[568].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[576].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[584].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[592].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[600].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[608].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[616].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[624].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[632].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[640].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[648].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[656].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[664].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[672].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[680].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[688].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[696].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[704].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[712].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[720].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[728].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[736].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[744].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[752].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[760].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[768].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[776].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "t2bs[784].t2b/Output" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Common 17-14] Message 'Synth 8-5587' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1294.254 ; gain = 447.164 ; free physical = 143 ; free virtual = 7400
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1294.254 ; gain = 447.164 ; free physical = 143 ; free virtual = 7400
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 1410.332 ; gain = 563.242 ; free physical = 137 ; free virtual = 7278
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 1410.332 ; gain = 563.242 ; free physical = 137 ; free virtual = 7278
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 1410.332 ; gain = 563.242 ; free physical = 137 ; free virtual = 7278
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 1435.332 ; gain = 588.242 ; free physical = 148 ; free virtual = 7263
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 1435.332 ; gain = 588.242 ; free physical = 148 ; free virtual = 7263
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 1435.332 ; gain = 588.242 ; free physical = 148 ; free virtual = 7263
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1435.332 ; gain = 588.242 ; free physical = 148 ; free virtual = 7263
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1435.332 ; gain = 588.242 ; free physical = 148 ; free virtual = 7263
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1435.332 ; gain = 588.242 ; free physical = 147 ; free virtual = 7263
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     1|
+|4     |LUT2   |  1036|
+|5     |LUT3   |   232|
+|6     |LUT4   |   334|
+|7     |LUT5   |  1695|
+|8     |LUT6   |  1443|
+|9     |FDRE   |    44|
+|10    |LD     |  1024|
+|11    |IBUF   |  2051|
+|12    |OBUF   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  7870|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1435.332 ; gain = 588.242 ; free physical = 147 ; free virtual = 7263
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1435.332 ; gain = 462.520 ; free physical = 147 ; free virtual = 7263
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1435.332 ; gain = 588.242 ; free physical = 147 ; free virtual = 7263
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3083 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'AlgoritmoCorrelacion' is not ideal for floorplanning, since the cellview 'AlgoritmoCorrelacion' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1024 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1024 instances were transformed.
+  LD => LDCE (inverted pins: G): 1024 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+134 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:58 . Memory (MB): peak = 1459.344 ; gain = 540.922 ; free physical = 117 ; free virtual = 7262
+report_utilization: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.84 . Memory (MB): peak = 1491.359 ; gain = 0.000 ; free physical = 170 ; free virtual = 7272
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 29 14:57:38 2016...

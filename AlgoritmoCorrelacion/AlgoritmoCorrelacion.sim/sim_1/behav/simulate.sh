@@ -9,4 +9,4 @@ then
 exit $RETVAL
 fi
 }
-ExecStep $xv_path/bin/xsim tb_movingAverage_behav -key {Behavioral:sim_1:Functional:tb_movingAverage} -tclbatch tb_movingAverage.tcl -log simulate.log
+ExecStep $xv_path/bin/xsim tb_AlgoritmoCorrelacion_behav -key {Behavioral:sim_1:Functional:tb_AlgoritmoCorrelacion} -tclbatch tb_AlgoritmoCorrelacion.tcl -log simulate.log

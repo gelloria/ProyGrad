@@ -1,13 +1,24 @@
 Vivado Simulator 2015.4
 Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
-Running: /opt/Xilinx/Vivado/2015.4/bin/unwrapped/lnx64.o/xelab -wto 419dddb1f1ad44b882a6b3e2abc42a8f --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_movingAverage_behav xil_defaultlib.tb_movingAverage xil_defaultlib.glbl -log elaborate.log 
+Running: /opt/Xilinx/Vivado/2015.4/bin/unwrapped/lnx64.o/xelab -wto 419dddb1f1ad44b882a6b3e2abc42a8f --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_AlgoritmoCorrelacion_behav xil_defaultlib.tb_AlgoritmoCorrelacion xil_defaultlib.glbl -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.movingAverage(SAMPLES=2,OSF=8,n=...
-Compiling module xil_defaultlib.tb_movingAverage
+Compiling module xil_defaultlib.Multiplicador(SAMPLES=128,OSF=8)
+Compiling module xil_defaultlib.SR_latch_gate
+Compiling module xil_defaultlib.mux2_1
+Compiling module xil_defaultlib.delayed_and
+Compiling module xil_defaultlib.Sort(SAMPLES=128,OSF=8)
+Compiling module xil_defaultlib.thermo2bin
+Compiling module xil_defaultlib.Sumatoria(SAMPLES=128,OSF=8)
+Compiling module xil_defaultlib.FiltroPB(SAMPLES=128,OSF=8)
+Compiling module xil_defaultlib.shiftRegister(SAMPLES=128,OSF=8,...
+Compiling module xil_defaultlib.movingAverage(SAMPLES=128,OSF=8,...
+Compiling module xil_defaultlib.Comparador(SAMPLES=128,OSF=8)
+Compiling module xil_defaultlib.AlgoritmoCorrelacion(SAMPLES=128...
+Compiling module xil_defaultlib.tb_AlgoritmoCorrelacion
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_movingAverage_behav
+Built simulation snapshot tb_AlgoritmoCorrelacion_behav

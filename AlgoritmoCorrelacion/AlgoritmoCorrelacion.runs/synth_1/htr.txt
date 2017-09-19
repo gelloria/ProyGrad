@@ -6,4 +6,4 @@
 # Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log movingAverage.vds -m64 -mode batch -messageDb vivado.pb -notrace -source movingAverage.tcl
+vivado -log AlgoritmoCorrelacion.vds -m64 -mode batch -messageDb vivado.pb -notrace -source AlgoritmoCorrelacion.tcl

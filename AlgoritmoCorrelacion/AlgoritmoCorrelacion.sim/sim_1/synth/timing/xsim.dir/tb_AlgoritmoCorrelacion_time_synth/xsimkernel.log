@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_AlgoritmoCorrelacion_time_synth/xsimk -simmode gui -wdb tb_AlgoritmoCorrelacion_time_synth.wdb -simrunnum 0 -socket 33123
+Design successfully loaded
+Design Loading Memory Usage: 136216 KB (Peak: 137328 KB)
+Design Loading CPU Usage: 40 ms
+Simulation completed
+Simulation Memory Usage: 214048 KB (Peak: 275484 KB)
+Simulation CPU Usage: 60 ms

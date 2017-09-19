@@ -19,15 +19,16 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module FiltroPB # (parameter SAMPLES=2, parameter OSF=8) (P,DataIn,DataOut);
+module FiltroPB # (parameter SAMPLES=128, parameter OSF=8) (P,Enable,DataIn,DataOut);
 	input wire P;
+	input wire Enable;
     input wire [SAMPLES*OSF-1:0] DataIn;
-    input wire [$clog2(SAMPLES*OSF):0] DataOut;
+    output wire [$clog2(SAMPLES*OSF):0] DataOut;
 
     wire [SAMPLES*OSF-1:0] InputOrdenado;
 
     Sort #(.SAMPLES(SAMPLES), .OSF(OSF)) ordenador (.P(P), .DataIn(DataIn), .DataOut(InputOrdenado));
 
-    Sumatoria #(.SAMPLES(SAMPLES), .OSF(OSF)) cantUnos (.Input(InputOrdenado), .Output(DataOut));
+    Sumatoria #(.SAMPLES(SAMPLES), .OSF(OSF)) cantUnos (.Enable(Enable),.Input(InputOrdenado), .Output(DataOut));
 
 endmodule
